@@ -1,18 +1,18 @@
 // Catálogo de projetos. Um projeto pode ter várias linguagens.
 const LANGS = {
-  javascript: { name: 'JavaScript', icon: 'javascript', color: '#A52A45', blurb: 'Jogos e ferramentas em JavaScript puro, sem framework e sem build.' },
-  html:       { name: 'HTML',       icon: 'html5',      color: '#781B32', blurb: 'Marcação semântica e acessível em cada projeto publicado.' },
-  css:        { name: 'CSS',        icon: 'css',        color: '#541525', blurb: 'Layouts responsivos, animações e temas claro e escuro só com CSS.' },
-  java:       { name: 'Java',       icon: 'openjdk',    color: '#321018', blurb: 'Back-end em Java 21 com Spring Boot.' },
+  javascript: { name: 'JavaScript · HTML · CSS', icon: 'javascript', color: '#A52A45', blurb: 'Jogos e sites em JavaScript puro, HTML semântico e CSS sem framework e sem build.' },
+  csharp:     { name: 'C#',                      icon: 'dotnet',     color: '#781B32', blurb: 'Aplicações em C# e .NET.' },
+  java:       { name: 'Java',                    icon: 'openjdk',    color: '#541525', blurb: 'Back-end em Java 21 com Spring Boot.' },
 };
 
 const GH = 'https://github.com/condeDeveloper/';
 const PAGES = 'https://condedeveloper.github.io/';
-const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript', 'html', 'css'], kind: 'jogo' });
+const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
-  { slug: 'CountSite', name: 'CondeClub · site', icon: '🍷', desc: 'Landing page do CondeClub e do Manual Definitivo do Dev.', url: 'https://condecount.pages.dev/', repo: GH + 'CountSite', langs: ['html', 'css', 'javascript'], kind: 'site' },
-  { slug: 'jogos', name: 'Hub de jogos', icon: '🎮', desc: 'Página que reúne todos os jogos, com busca.', url: PAGES + 'jogos/', repo: GH + 'jogos', langs: ['javascript', 'html', 'css'], kind: 'site' },
+  { slug: 'tesouraria', name: 'Tesouraria', icon: '🏦', desc: 'Sistema financeiro em Java 21 e Spring Boot: ledger de partidas dobradas, câmbio pronto, NDF, opções com Garman-Kohlhagen e risco.', url: GH + 'tesouraria#readme', repo: GH + 'tesouraria', langs: ['java'], kind: 'back-end' },
+  { slug: 'CountSite', name: 'CondeClub · site', icon: '🍷', desc: 'Landing page do CondeClub e do Manual Definitivo do Dev.', url: 'https://condecount.pages.dev/', repo: GH + 'CountSite', langs: ['javascript'], kind: 'site' },
+  { slug: 'jogos', name: 'Hub de jogos', icon: '🎮', desc: 'Página que reúne todos os jogos, com busca.', url: PAGES + 'jogos/', repo: GH + 'jogos', langs: ['javascript'], kind: 'site' },
   game('tetris', 'Tetris', '🧱', '7-bag, hold, ghost piece, wall kicks, temas e ranking.'),
   game('breakout', 'Breakout', '🧨', 'Cinco níveis, tijolos reforçados, power-ups e partículas.'),
   game('space-invaders', 'Space Invaders', '👾', 'Pixel art, barreiras destrutíveis, nave misteriosa e ondas infinitas.'),
