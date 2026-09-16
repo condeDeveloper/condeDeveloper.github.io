@@ -10,6 +10,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'antifraude', name: 'Antifraude', icon: '🛡️', desc: 'Motor de regras antifraude em C# e .NET 8: linguagem própria com lexer, parser e avaliador, janelas deslizantes de velocidade, decisão Aprovar/Revisar/Negar com explicação e simulação em lote.', url: GH + 'antifraude#readme', repo: GH + 'antifraude', langs: ['csharp'], kind: 'back-end' },
   { slug: 'simulador-pix', name: 'Simulador Pix', icon: '💸', desc: 'PSP recebedor Pix em C# e .NET 8: BR Code EMV com CRC16, cobranças com QR dinâmico, pagamentos, devoluções e webhooks HMAC com reentrega. EF Core e SQLite.', url: GH + 'simulador-pix#readme', repo: GH + 'simulador-pix', langs: ['csharp'], kind: 'back-end' },
   { slug: 'livro-de-ofertas', name: 'Livro de Ofertas', icon: '📈', desc: 'Motor de casamento de ofertas em C# e .NET 8: prioridade preço-tempo, GTC/IOC/FOK, auto-negociação, candles, event sourcing, API e SignalR.', url: GH + 'livro-de-ofertas#readme', repo: GH + 'livro-de-ofertas', langs: ['csharp'], kind: 'back-end' },
   { slug: 'tesouraria', name: 'Tesouraria', icon: '🏦', desc: 'Sistema financeiro em Java 21 e Spring Boot: ledger de partidas dobradas, câmbio pronto, NDF, opções com Garman-Kohlhagen e risco.', url: GH + 'tesouraria#readme', repo: GH + 'tesouraria', langs: ['java'], kind: 'back-end' },
