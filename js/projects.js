@@ -2,6 +2,7 @@
 const LANGS = {
   csharp:     { name: 'C#',                      icon: 'dotnet',     color: '#781B32', blurb: 'Back-end e motores de negociação em C# e .NET 8.' },
   java:       { name: 'Java',                    icon: 'openjdk',    color: '#541525', blurb: 'Back-end em Java 21 com Spring Boot.' },
+  python:     { name: 'Python',                  icon: 'python',     color: '#3B0F1C', blurb: 'Ferramentas, bots e automações em Python.' },
   javascript: { name: 'JavaScript · HTML · CSS', icon: 'javascript', color: '#A52A45', blurb: 'Jogos e sites em JavaScript puro, HTML semântico e CSS sem framework e sem build.' },
 };
 
