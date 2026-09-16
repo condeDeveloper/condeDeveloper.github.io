@@ -1,8 +1,8 @@
 // Catálogo de projetos. Um projeto pode ter várias linguagens.
 const LANGS = {
-  javascript: { name: 'JavaScript · HTML · CSS', icon: 'javascript', color: '#A52A45', blurb: 'Jogos e sites em JavaScript puro, HTML semântico e CSS sem framework e sem build.' },
   csharp:     { name: 'C#',                      icon: 'dotnet',     color: '#781B32', blurb: 'Back-end e motores de negociação em C# e .NET 8.' },
   java:       { name: 'Java',                    icon: 'openjdk',    color: '#541525', blurb: 'Back-end em Java 21 com Spring Boot.' },
+  javascript: { name: 'JavaScript · HTML · CSS', icon: 'javascript', color: '#A52A45', blurb: 'Jogos e sites em JavaScript puro, HTML semântico e CSS sem framework e sem build.' },
 };
 
 const GH = 'https://github.com/condeDeveloper/';
