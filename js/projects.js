@@ -1,7 +1,7 @@
 // Catálogo de projetos. Um projeto pode ter várias linguagens.
 const LANGS = {
   javascript: { name: 'JavaScript · HTML · CSS', icon: 'javascript', color: '#A52A45', blurb: 'Jogos e sites em JavaScript puro, HTML semântico e CSS sem framework e sem build.' },
-  csharp:     { name: 'C#',                      icon: 'dotnet',     color: '#781B32', blurb: 'Aplicações em C# e .NET.' },
+  csharp:     { name: 'C#',                      icon: 'dotnet',     color: '#781B32', blurb: 'Back-end e motores de negociação em C# e .NET 8.' },
   java:       { name: 'Java',                    icon: 'openjdk',    color: '#541525', blurb: 'Back-end em Java 21 com Spring Boot.' },
 };
 
@@ -10,6 +10,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'livro-de-ofertas', name: 'Livro de Ofertas', icon: '📈', desc: 'Motor de casamento de ofertas em C# e .NET 8: prioridade preço-tempo, GTC/IOC/FOK, auto-negociação, candles, event sourcing, API e SignalR.', url: GH + 'livro-de-ofertas#readme', repo: GH + 'livro-de-ofertas', langs: ['csharp'], kind: 'back-end' },
   { slug: 'tesouraria', name: 'Tesouraria', icon: '🏦', desc: 'Sistema financeiro em Java 21 e Spring Boot: ledger de partidas dobradas, câmbio pronto, NDF, opções com Garman-Kohlhagen e risco.', url: GH + 'tesouraria#readme', repo: GH + 'tesouraria', langs: ['java'], kind: 'back-end' },
   { slug: 'CountSite', name: 'CondeClub · site', icon: '🍷', desc: 'Landing page do CondeClub e do Manual Definitivo do Dev.', url: 'https://condecount.pages.dev/', repo: GH + 'CountSite', langs: ['javascript'], kind: 'site' },
   { slug: 'jogos', name: 'Hub de jogos', icon: '🎮', desc: 'Página que reúne todos os jogos, com busca.', url: PAGES + 'jogos/', repo: GH + 'jogos', langs: ['javascript'], kind: 'site' },
