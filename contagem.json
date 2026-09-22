@@ -1,8 +1,9 @@
 {
-  "atualizadoEm": "2026-09-21",
-  "total": 41,
+  "atualizadoEm": "2026-09-22",
+  "total": 46,
   "csharp": 15,
   "java": 4,
   "python": 4,
+  "node": 5,
   "javascript": 18
 }
