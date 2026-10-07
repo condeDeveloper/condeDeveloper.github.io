@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'cobertura', name: 'Cobertura', icon: '^', desc: 'Cobertura por vertices e por conjuntos com a definicao como juiz, mais Gallai e Konig, e o que o desempate faz com a heuristica gulosa.', url: GH + 'cobertura#readme', repo: GH + 'cobertura', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'componentes', name: 'Componentes', icon: '@', desc: 'Componentes fortemente conexas com a definicao como juiz: Tarjan, Kosaraju, e a conferencia de tres palavras que separa o algoritmo certo do plausivel.', url: GH + 'componentes#readme', repo: GH + 'componentes', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'coloracao', name: 'Coloracao', icon: '%', desc: 'Coloracao de grafos com a definicao de numero cromatico como juiz, e o que a ordem de visita faz com a coloracao gulosa.', url: GH + 'coloracao#readme', repo: GH + 'coloracao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'envoltoria', name: 'Envoltoria', icon: '#', desc: 'Tres algoritmos de envoltoria convexa com a definicao escrita como forca bruta no papel de juiz, e o que acontece quando o predicado de orientacao usa ponto flutuante.', url: GH + 'envoltoria#readme', repo: GH + 'envoltoria', langs: ['csharp'], kind: 'biblioteca' },
