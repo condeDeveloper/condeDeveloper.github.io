@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'pontes', name: 'Pontes', icon: '+', desc: 'Pontes e vertices de corte com a definicao como juiz, e a palavra que separa a versao certa da que esta em todo lugar.', url: GH + 'pontes#readme', repo: GH + 'pontes', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'isomorfismo', name: 'Isomorfismo', icon: '=', desc: 'Isomorfismo de grafos com a definicao como juiz: quatro invariantes, o refinamento de cores, uma busca com poda, e onde cada um cega.', url: GH + 'isomorfismo#readme', repo: GH + 'isomorfismo', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'cobertura', name: 'Cobertura', icon: '^', desc: 'Cobertura por vertices e por conjuntos com a definicao como juiz, mais Gallai e Konig, e o que o desempate faz com a heuristica gulosa.', url: GH + 'cobertura#readme', repo: GH + 'cobertura', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'componentes', name: 'Componentes', icon: '@', desc: 'Componentes fortemente conexas com a definicao como juiz: Tarjan, Kosaraju, e a conferencia de tres palavras que separa o algoritmo certo do plausivel.', url: GH + 'componentes#readme', repo: GH + 'componentes', langs: ['csharp'], kind: 'biblioteca' },
