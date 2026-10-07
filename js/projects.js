@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'envoltoria', name: 'Envoltoria', icon: '#', desc: 'Tres algoritmos de envoltoria convexa com a definicao escrita como forca bruta no papel de juiz, e o que acontece quando o predicado de orientacao usa ponto flutuante.', url: GH + 'envoltoria#readme', repo: GH + 'envoltoria', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'expressoes', name: 'Expressoes', icon: '*', desc: 'Dois motores de expressao regular do zero: o com retrocesso e o de Thompson. O juiz e a definicao matematica da linguagem de um padrao, escrita como funcao.', url: GH + 'expressoes#readme', repo: GH + 'expressoes', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'alocacao', name: 'Alocacao', icon: '[]', desc: 'Alocacao de memoria do zero: primeiro, melhor, pior e proximo encaixe, e o sistema de companheiros. O juiz e a contabilidade byte a byte e a enumeracao de todas as escolhas de buraco.', url: GH + 'alocacao#readme', repo: GH + 'alocacao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'arvores', name: 'Arvores', icon: 'Y', desc: 'Arvores de busca do zero: sem balanceamento, AVL, rubro-negra inclinada para a esquerda e treap. O juiz sao as invariantes conferidas do zero e a enumeracao de todas as ordens de insercao.', url: GH + 'arvores#readme', repo: GH + 'arvores', langs: ['csharp'], kind: 'biblioteca' },
