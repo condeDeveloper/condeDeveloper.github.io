@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'cliques', name: 'Cliques', icon: 'o', desc: 'Cliques maximais com a definicao como juiz: Bron e Kerbosch com e sem pivo, o grafo de Moon e Moser, e o segundo juiz que nao fala de clique nenhuma.', url: GH + 'cliques#readme', repo: GH + 'cliques', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'particao', name: 'Particao', icon: '/', desc: 'O problema da particao com a definicao como juiz, dois metodos exatos que crescem por motivos diferentes, e a transicao de facil para dificil medida.', url: GH + 'particao#readme', repo: GH + 'particao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'nim', name: 'Nim', icon: '&', desc: 'Jogos imparciais com a definicao de posicao perdedora como juiz: Bouton, Sprague e Grundy conferidos em todas as posicoes, e o misere que o ou exclusivo nao resolve.', url: GH + 'nim#readme', repo: GH + 'nim', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'pontes', name: 'Pontes', icon: '+', desc: 'Pontes e vertices de corte com a definicao como juiz, e a palavra que separa a versao certa da que esta em todo lugar.', url: GH + 'pontes#readme', repo: GH + 'pontes', langs: ['csharp'], kind: 'biblioteca' },
