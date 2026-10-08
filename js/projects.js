@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'caixeiro', name: 'Caixeiro', icon: '~', desc: 'O caixeiro viajante com a definicao como juiz e Held e Karp como segundo metodo exato, e a propriedade geometrica do 2-opt conferida sobre os pontos.', url: GH + 'caixeiro#readme', repo: GH + 'caixeiro', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'fatoracao', name: 'Fatoracao', icon: 'x', desc: 'Fatoracao e primalidade com a definicao como juiz: a assimetria entre achar e conferir medida em contas, e os numeros que enganam o teste de Fermat.', url: GH + 'fatoracao#readme', repo: GH + 'fatoracao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'dominacao', name: 'Dominacao', icon: 'd', desc: 'Conjunto dominante minimo com a definicao como juiz e uma conta linear nas arvores, e o grafo em que a heuristica com garantia perde para a sem garantia.', url: GH + 'dominacao#readme', repo: GH + 'dominacao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'torneio', name: 'Torneio', icon: 'T', desc: 'Classificacao de torneios com a definicao como juiz, os teoremas de Redei e Moon conferidos em TODOS os torneios, e o paradoxo de Condorcet medido.', url: GH + 'torneio#readme', repo: GH + 'torneio', langs: ['csharp'], kind: 'biblioteca' },
