@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'torneio', name: 'Torneio', icon: 'T', desc: 'Classificacao de torneios com a definicao como juiz, os teoremas de Redei e Moon conferidos em TODOS os torneios, e o paradoxo de Condorcet medido.', url: GH + 'torneio#readme', repo: GH + 'torneio', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'selecao', name: 'Selecao', icon: 'k', desc: 'Achar o k-esimo menor sem ordenar tudo, com a definicao como juiz, os limites por baixo de 1932 e o caso ruim de cada escolha de pivo.', url: GH + 'selecao#readme', repo: GH + 'selecao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'cliques', name: 'Cliques', icon: 'o', desc: 'Cliques maximais com a definicao como juiz: Bron e Kerbosch com e sem pivo, o grafo de Moon e Moser, e o segundo juiz que nao fala de clique nenhuma.', url: GH + 'cliques#readme', repo: GH + 'cliques', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'particao', name: 'Particao', icon: '/', desc: 'O problema da particao com a definicao como juiz, dois metodos exatos que crescem por motivos diferentes, e a transicao de facil para dificil medida.', url: GH + 'particao#readme', repo: GH + 'particao', langs: ['csharp'], kind: 'biblioteca' },
