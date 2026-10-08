@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'fatoracao', name: 'Fatoracao', icon: 'x', desc: 'Fatoracao e primalidade com a definicao como juiz: a assimetria entre achar e conferir medida em contas, e os numeros que enganam o teste de Fermat.', url: GH + 'fatoracao#readme', repo: GH + 'fatoracao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'dominacao', name: 'Dominacao', icon: 'd', desc: 'Conjunto dominante minimo com a definicao como juiz e uma conta linear nas arvores, e o grafo em que a heuristica com garantia perde para a sem garantia.', url: GH + 'dominacao#readme', repo: GH + 'dominacao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'torneio', name: 'Torneio', icon: 'T', desc: 'Classificacao de torneios com a definicao como juiz, os teoremas de Redei e Moon conferidos em TODOS os torneios, e o paradoxo de Condorcet medido.', url: GH + 'torneio#readme', repo: GH + 'torneio', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'selecao', name: 'Selecao', icon: 'k', desc: 'Achar o k-esimo menor sem ordenar tudo, com a definicao como juiz, os limites por baixo de 1932 e o caso ruim de cada escolha de pivo.', url: GH + 'selecao#readme', repo: GH + 'selecao', langs: ['csharp'], kind: 'biblioteca' },
