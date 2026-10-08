@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'horizonte', name: 'Horizonte', icon: '_', desc: 'O horizonte de uma cidade com a definicao ponto a ponto como juiz, e duas varreduras plausiveis que erram em lugares opostos.', url: GH + 'horizonte#readme', repo: GH + 'horizonte', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'caixeiro', name: 'Caixeiro', icon: '~', desc: 'O caixeiro viajante com a definicao como juiz e Held e Karp como segundo metodo exato, e a propriedade geometrica do 2-opt conferida sobre os pontos.', url: GH + 'caixeiro#readme', repo: GH + 'caixeiro', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'fatoracao', name: 'Fatoracao', icon: 'x', desc: 'Fatoracao e primalidade com a definicao como juiz: a assimetria entre achar e conferir medida em contas, e os numeros que enganam o teste de Fermat.', url: GH + 'fatoracao#readme', repo: GH + 'fatoracao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'dominacao', name: 'Dominacao', icon: 'd', desc: 'Conjunto dominante minimo com a definicao como juiz e uma conta linear nas arvores, e o grafo em que a heuristica com garantia perde para a sem garantia.', url: GH + 'dominacao#readme', repo: GH + 'dominacao', langs: ['csharp'], kind: 'biblioteca' },
