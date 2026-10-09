@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'glob', name: 'Glob', icon: '?', desc: 'Casamento de padroes glob por retrocesso, tabela e dois ponteiros, julgados pelo automato e pela enumeracao de todos os textos ate oito caracteres.', url: GH + 'glob#readme', repo: GH + 'glob', langs: ['java'], kind: 'biblioteca' },
   { slug: 'unificacao', name: 'Unificacao', icon: '=', desc: 'Unificacao de termos de primeira ordem com teste de ocorrencia, julgada pela definicao: aplicar a substituicao nos dois termos e comparar.', url: GH + 'unificacao#readme', repo: GH + 'unificacao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'cron', name: 'Cron', icon: '@', desc: 'Analisador de expressoes cron e proximo disparo julgados pela varredura minuto a minuto, com o OU entre dia do mes e dia da semana e o passo que nao e resto.', url: GH + 'cron#readme', repo: GH + 'cron', langs: ['java'], kind: 'biblioteca' },
   { slug: 'paginacao', name: 'Paginacao', icon: '#', desc: 'Politicas de substituicao de pagina medidas contra o otimo de Belady e contra a distancia de pilha, com a anomalia de Belady e o laco em que a LRU erra tudo.', url: GH + 'paginacao#readme', repo: GH + 'paginacao', langs: ['java'], kind: 'biblioteca' },
