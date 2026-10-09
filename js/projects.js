@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'arvore-geradora', name: 'Arvore Geradora', icon: 'Y', desc: 'Arvore geradora minima por Kruskal, Prim e Boruvka, julgadas pela forca bruta sobre todos os subconjuntos e pelo teorema de Kirchhoff.', url: GH + 'arvore-geradora#readme', repo: GH + 'arvore-geradora', langs: ['java'], kind: 'biblioteca' },
   { slug: 'topologica', name: 'Topologica', icon: '>', desc: 'Ordenacao topologica por Kahn e por profundidade, julgada pela definicao e pela contagem de extensoes lineares, que e completa para a classe de contagem.', url: GH + 'topologica#readme', repo: GH + 'topologica', langs: ['java'], kind: 'biblioteca' },
   { slug: 'glob', name: 'Glob', icon: '?', desc: 'Casamento de padroes glob por retrocesso, tabela e dois ponteiros, julgados pelo automato e pela enumeracao de todos os textos ate oito caracteres.', url: GH + 'glob#readme', repo: GH + 'glob', langs: ['java'], kind: 'biblioteca' },
   { slug: 'unificacao', name: 'Unificacao', icon: '=', desc: 'Unificacao de termos de primeira ordem com teste de ocorrencia, julgada pela definicao: aplicar a substituicao nos dois termos e comparar.', url: GH + 'unificacao#readme', repo: GH + 'unificacao', langs: ['java'], kind: 'biblioteca' },
