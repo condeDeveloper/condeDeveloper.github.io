@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'retentativa', name: 'Retentativa', icon: 'r', desc: 'Politicas de nova tentativa e espera julgadas pela conta fechada da geometrica, com relogio simulado, a debandada de mil clientes e o teto que falta.', url: GH + 'retentativa#readme', repo: GH + 'retentativa', langs: ['java'], kind: 'biblioteca' },
   { slug: 'prioridade', name: 'Prioridade', icon: '!', desc: 'Filas de prioridade por monte binario, pareado e esquerdista, julgadas pela fila por lista ordenada, com comparacoes e trocas contadas uma a uma.', url: GH + 'prioridade#readme', repo: GH + 'prioridade', langs: ['java'], kind: 'biblioteca' },
   { slug: 'arvore-geradora', name: 'Arvore Geradora', icon: 'Y', desc: 'Arvore geradora minima por Kruskal, Prim e Boruvka, julgadas pela forca bruta sobre todos os subconjuntos e pelo teorema de Kirchhoff.', url: GH + 'arvore-geradora#readme', repo: GH + 'arvore-geradora', langs: ['java'], kind: 'biblioteca' },
   { slug: 'topologica', name: 'Topologica', icon: '>', desc: 'Ordenacao topologica por Kahn e por profundidade, julgada pela definicao e pela contagem de extensoes lineares, que e completa para a classe de contagem.', url: GH + 'topologica#readme', repo: GH + 'topologica', langs: ['java'], kind: 'biblioteca' },
