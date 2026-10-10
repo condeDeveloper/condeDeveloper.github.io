@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'deduplicacao', name: 'Deduplicacao', icon: 'd', desc: 'Fatiamento por conteudo contra fatiamento fixo, julgados pela remontagem byte a byte, com janela deslizante e o caso degenerado dos bytes iguais.', url: GH + 'deduplicacao#readme', repo: GH + 'deduplicacao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'balanceador', name: 'Balanceador', icon: '=', desc: 'Estrategias de balanceamento de carga julgadas pela forca bruta sobre todas as distribuicoes e pelo teorema das duas escolhas, com as consultas de carga contadas.', url: GH + 'balanceador#readme', repo: GH + 'balanceador', langs: ['java'], kind: 'biblioteca' },
   { slug: 'retentativa', name: 'Retentativa', icon: 'r', desc: 'Politicas de nova tentativa e espera julgadas pela conta fechada da geometrica, com relogio simulado, a debandada de mil clientes e o teto que falta.', url: GH + 'retentativa#readme', repo: GH + 'retentativa', langs: ['java'], kind: 'biblioteca' },
   { slug: 'prioridade', name: 'Prioridade', icon: '!', desc: 'Filas de prioridade por monte binario, pareado e esquerdista, julgadas pela fila por lista ordenada, com comparacoes e trocas contadas uma a uma.', url: GH + 'prioridade#readme', repo: GH + 'prioridade', langs: ['java'], kind: 'biblioteca' },
