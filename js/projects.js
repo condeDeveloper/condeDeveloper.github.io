@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'justica', name: 'Enfileiramento justo', icon: '⚖️', desc: 'Enfileiramento justo do zero: rodizio e justo em pacotes e nao em bytes', url: GH + 'justica#readme', repo: GH + 'justica', langs: ['java'], kind: 'biblioteca' },
   { slug: 'plano', name: 'Ordenacao de juncoes', icon: '🗺️', desc: 'Ordenacao de juncoes do zero: errar a estimativa custa mais do que errar o algoritmo', url: GH + 'plano#readme', repo: GH + 'plano', langs: ['java'], kind: 'biblioteca' },
   { slug: 'paridade', name: 'Codigos de apagamento', icon: '🛡️', desc: 'Codificacao por apagamento do zero: tolerar as mesmas perdas nao e ter a mesma durabilidade', url: GH + 'paridade#readme', repo: GH + 'paridade', langs: ['java'], kind: 'biblioteca' },
   { slug: 'despejo', name: 'Despejo de cache', icon: '🗃️', desc: 'Despejo de cache do zero: qual politica escolher quando nao se sabe qual sera a carga', url: GH + 'despejo#readme', repo: GH + 'despejo', langs: ['java'], kind: 'biblioteca' },
