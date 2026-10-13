@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'kd-arvore', name: 'Árvore k-d', icon: '🎯', desc: 'Em dimensão 16 a mesma árvore visita 19.751 de 20.000 pontos, ou 13. Mil e quinhentas vezes de diferença, e a única coisa que muda é de onde veio a pergunta. 39 testes', url: GH + 'kd-arvore#readme', repo: GH + 'kd-arvore', langs: ['java'], kind: 'biblioteca' },
   { slug: 'b-arvore', name: 'Árvore B', icon: '🌲', desc: 'Alargar o nó derruba os blocos lidos de 10,48 para 2,99 e NÃO derruba as comparações: elas ficam em 16 de ponta a ponta, que é o logaritmo de n. Uma árvore B não compara menos, lê menos blocos para comparar o mesmo tanto. 49 testes', url: GH + 'b-arvore#readme', repo: GH + 'b-arvore', langs: ['java'], kind: 'biblioteca' },
   { slug: 'conjuntos', name: 'Conjuntos', icon: 'c', desc: 'Conjuntos disjuntos sem truque, so com compressao, so por tamanho e com os dois, julgados por um juiz de rotulos na particao inteira.', url: GH + 'conjuntos#readme', repo: GH + 'conjuntos', langs: ['java'], kind: 'biblioteca' },
   { slug: 'trie', name: 'Trie', icon: 't', desc: 'Trie de vetor, de mapa e compacta contra um vetor ordenado, julgadas por um conjunto ordenado com varredura linear.', url: GH + 'trie#readme', repo: GH + 'trie', langs: ['java'], kind: 'biblioteca' },
