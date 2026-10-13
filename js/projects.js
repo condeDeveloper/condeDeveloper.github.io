@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'amostragem', name: 'Amostragem', icon: 'a', desc: 'Amostragem de reservatorio contra tres versoes plausiveis e erradas, julgadas pela enumeracao exata de todos os caminhos de execucao.', url: GH + 'amostragem#readme', repo: GH + 'amostragem', langs: ['java'], kind: 'biblioteca' },
   { slug: 'centralidade', name: 'Centralidade', icon: 'c', desc: 'Grau, proximidade, intermediacao de Brandes e PageRank contra quatro juizes independentes, entre eles a enumeracao literal de todos os caminhos.', url: GH + 'centralidade#readme', repo: GH + 'centralidade', langs: ['java'], kind: 'biblioteca' },
   { slug: 'deduplicacao', name: 'Deduplicacao', icon: 'd', desc: 'Fatiamento por conteudo contra fatiamento fixo, julgados pela remontagem byte a byte, com janela deslizante e o caso degenerado dos bytes iguais.', url: GH + 'deduplicacao#readme', repo: GH + 'deduplicacao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'balanceador', name: 'Balanceador', icon: '=', desc: 'Estrategias de balanceamento de carga julgadas pela forca bruta sobre todas as distribuicoes e pelo teorema das duas escolhas, com as consultas de carga contadas.', url: GH + 'balanceador#readme', repo: GH + 'balanceador', langs: ['java'], kind: 'biblioteca' },
