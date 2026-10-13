@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'indice', name: 'Índices e seletividade', icon: '📇', desc: 'Índices do zero: a partir de que seletividade usar o índice lê mais páginas do que não usar', url: GH + 'indice#readme', repo: GH + 'indice', langs: ['java'], kind: 'biblioteca' },
   { slug: 'lote', name: 'Agrupamento de gravações', icon: '📦', desc: 'A coluna que eu usei para declarar a vencedora escondia um peso que eu não tinha declarado: com outro peso, a estratégia adaptativa perde em três das cinco cargas. 26 testes', url: GH + 'lote#readme', repo: GH + 'lote', langs: ['java'], kind: 'biblioteca' },
   { slug: 'moeda', name: 'Troco', icon: '🪙', desc: 'Real, dólar e euro são canônicos: a gulosa nunca erra neles. Mas das onze moedas que podem sair do real, uma quebra o sistema, e a libra antiga nunca foi canônica. 26 testes', url: GH + 'moeda#readme', repo: GH + 'moeda', langs: ['java'], kind: 'biblioteca' },
   { slug: 'texto', name: 'Quebra de linha', icon: '📝', desc: 'O parágrafo que construí para derrubar o guloso empatou com o ótimo. O procurado por busca derrubou por 150%, com um padrão que eu não teria inventado. 29 testes', url: GH + 'texto#readme', repo: GH + 'texto', langs: ['java'], kind: 'biblioteca' },
