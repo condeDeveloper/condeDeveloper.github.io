@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'janela', name: 'Janela', icon: 'j', desc: 'Agregados em janela deslizante: fila monotonica, duas pilhas e monte tardio contra a varredura ingenua, e a soma julgada em BigDecimal.', url: GH + 'janela#readme', repo: GH + 'janela', langs: ['java'], kind: 'biblioteca' },
   { slug: 'cardinalidade', name: 'Cardinalidade', icon: 'c', desc: 'HyperLogLog contra o conjunto exato: as correcoes, o que acontece sem elas e o que um espalhamento fraco faz com a conta.', url: GH + 'cardinalidade#readme', repo: GH + 'cardinalidade', langs: ['java'], kind: 'biblioteca' },
   { slug: 'amostragem', name: 'Amostragem', icon: 'a', desc: 'Amostragem de reservatorio contra tres versoes plausiveis e erradas, julgadas pela enumeracao exata de todos os caminhos de execucao.', url: GH + 'amostragem#readme', repo: GH + 'amostragem', langs: ['java'], kind: 'biblioteca' },
   { slug: 'centralidade', name: 'Centralidade', icon: 'c', desc: 'Grau, proximidade, intermediacao de Brandes e PageRank contra quatro juizes independentes, entre eles a enumeracao literal de todos os caminhos.', url: GH + 'centralidade#readme', repo: GH + 'centralidade', langs: ['java'], kind: 'biblioteca' },
