@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'serializacao', name: 'Serializacao', icon: 's', desc: 'Tamanho fixo, varinteiro e zigue-zague julgados pela ida e volta, e um formato de registro com etiquetas e evolucao de esquema.', url: GH + 'serializacao#readme', repo: GH + 'serializacao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'lsm', name: 'LSM', icon: 'l', desc: 'Arvore de mesclagem estruturada em log com compactacao por nivel e por tamanho, julgada por um mapa espelho em todas as chaves que ja existiram.', url: GH + 'lsm#readme', repo: GH + 'lsm', langs: ['java'], kind: 'biblioteca' },
   { slug: 'relogio', name: 'Relogio', icon: 'r', desc: 'Lamport, vetorial, hibrido e o relogio de parede, julgados pelo fecho transitivo do aconteceu-antes em todos os pares de eventos.', url: GH + 'relogio#readme', repo: GH + 'relogio', langs: ['java'], kind: 'biblioteca' },
   { slug: 'vazao', name: 'Vazao', icon: 'v', desc: 'Janela fixa, registro deslizante, contador deslizante e balde de fichas, julgados pela pior janela e nao pelo contador que cada um guarda.', url: GH + 'vazao#readme', repo: GH + 'vazao', langs: ['java'], kind: 'biblioteca' },
