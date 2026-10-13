@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'paridade', name: 'Codigos de apagamento', icon: '🛡️', desc: 'Codificacao por apagamento do zero: tolerar as mesmas perdas nao e ter a mesma durabilidade', url: GH + 'paridade#readme', repo: GH + 'paridade', langs: ['java'], kind: 'biblioteca' },
   { slug: 'despejo', name: 'Despejo de cache', icon: '🗃️', desc: 'Despejo de cache do zero: qual politica escolher quando nao se sabe qual sera a carga', url: GH + 'despejo#readme', repo: GH + 'despejo', langs: ['java'], kind: 'biblioteca' },
   { slug: 'indice', name: 'Índices e seletividade', icon: '📇', desc: 'Índices do zero: a partir de que seletividade usar o índice lê mais páginas do que não usar', url: GH + 'indice#readme', repo: GH + 'indice', langs: ['java'], kind: 'biblioteca' },
   { slug: 'lote', name: 'Agrupamento de gravações', icon: '📦', desc: 'A coluna que eu usei para declarar a vencedora escondia um peso que eu não tinha declarado: com outro peso, a estratégia adaptativa perde em três das cinco cargas. 26 testes', url: GH + 'lote#readme', repo: GH + 'lote', langs: ['java'], kind: 'biblioteca' },
