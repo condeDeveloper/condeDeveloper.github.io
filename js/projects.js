@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'vazao', name: 'Vazao', icon: 'v', desc: 'Janela fixa, registro deslizante, contador deslizante e balde de fichas, julgados pela pior janela e nao pelo contador que cada um guarda.', url: GH + 'vazao#readme', repo: GH + 'vazao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'quantis', name: 'Quantis', icon: 'q', desc: 'Greenwald e Khanna contra a amostra, o histograma e o guarda um de cada mil, julgados pelo erro de posto contra a ordenacao exata.', url: GH + 'quantis#readme', repo: GH + 'quantis', langs: ['java'], kind: 'biblioteca' },
   { slug: 'janela', name: 'Janela', icon: 'j', desc: 'Agregados em janela deslizante: fila monotonica, duas pilhas e monte tardio contra a varredura ingenua, e a soma julgada em BigDecimal.', url: GH + 'janela#readme', repo: GH + 'janela', langs: ['java'], kind: 'biblioteca' },
   { slug: 'cardinalidade', name: 'Cardinalidade', icon: 'c', desc: 'HyperLogLog contra o conjunto exato: as correcoes, o que acontece sem elas e o que um espalhamento fraco faz com a conta.', url: GH + 'cardinalidade#readme', repo: GH + 'cardinalidade', langs: ['java'], kind: 'biblioteca' },
