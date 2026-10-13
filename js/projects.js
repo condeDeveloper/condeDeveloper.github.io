@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'conjuntos', name: 'Conjuntos', icon: 'c', desc: 'Conjuntos disjuntos sem truque, so com compressao, so por tamanho e com os dois, julgados por um juiz de rotulos na particao inteira.', url: GH + 'conjuntos#readme', repo: GH + 'conjuntos', langs: ['java'], kind: 'biblioteca' },
   { slug: 'trie', name: 'Trie', icon: 't', desc: 'Trie de vetor, de mapa e compacta contra um vetor ordenado, julgadas por um conjunto ordenado com varredura linear.', url: GH + 'trie#readme', repo: GH + 'trie', langs: ['java'], kind: 'biblioteca' },
   { slug: 'particionamento', name: 'Particionamento', icon: 'p', desc: 'Resto da divisao, anel de hashing consistente, hashing de encontro e salto consistente, julgados pela atribuicao inteira recalculada.', url: GH + 'particionamento#readme', repo: GH + 'particionamento', langs: ['java'], kind: 'biblioteca' },
   { slug: 'serializacao', name: 'Serializacao', icon: 's', desc: 'Tamanho fixo, varinteiro e zigue-zague julgados pela ida e volta, e um formato de registro com etiquetas e evolucao de esquema.', url: GH + 'serializacao#readme', repo: GH + 'serializacao', langs: ['java'], kind: 'biblioteca' },
