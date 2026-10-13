@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'raiz', name: 'Busca de raiz', icon: '📉', desc: 'Busca de raiz do zero: contando o que custa, a secante ganha de Newton', url: GH + 'raiz#readme', repo: GH + 'raiz', langs: ['java'], kind: 'biblioteca' },
   { slug: 'decisao', name: 'Arvores de decisao', icon: '🌳', desc: 'Arvores de decisao do zero: a arvore otima erra menos no treino e mais no teste', url: GH + 'decisao#readme', repo: GH + 'decisao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'boato', name: 'Espalhamento de boato', icon: '📢', desc: 'Espalhamento de boato do zero: empurrar e puxar chegam juntos a metade da rede, e a diferenca esta no fim', url: GH + 'boato#readme', repo: GH + 'boato', langs: ['java'], kind: 'biblioteca' },
   { slug: 'cifra', name: 'Modos de cifra de bloco', icon: '🔐', desc: 'Modos de operacao de cifra de bloco do zero: quanto cada modo quebrado vaza, medido em blocos', url: GH + 'cifra#readme', repo: GH + 'cifra', langs: ['java'], kind: 'biblioteca' },
