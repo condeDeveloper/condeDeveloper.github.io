@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'gramatica', name: 'Analise sintatica ascendente', icon: '🧩', desc: 'LR(0), SLR, LALR e LR(1) do zero: o conflito que o LALR inventa nao apareceu em 2.000 gramaticas sorteadas', url: GH + 'gramatica#readme', repo: GH + 'gramatica', langs: ['java'], kind: 'biblioteca' },
   { slug: 'ciclo', name: 'Deteccao de ciclo', icon: '🔄', desc: 'Deteccao de ciclo do zero: a briga entre Floyd e Brent e a menor das duas', url: GH + 'ciclo#readme', repo: GH + 'ciclo', langs: ['java'], kind: 'biblioteca' },
   { slug: 'raiz', name: 'Busca de raiz', icon: '📉', desc: 'Busca de raiz do zero: contando o que custa, a secante ganha de Newton', url: GH + 'raiz#readme', repo: GH + 'raiz', langs: ['java'], kind: 'biblioteca' },
   { slug: 'decisao', name: 'Arvores de decisao', icon: '🌳', desc: 'Arvores de decisao do zero: a arvore otima erra menos no treino e mais no teste', url: GH + 'decisao#readme', repo: GH + 'decisao', langs: ['java'], kind: 'biblioteca' },
