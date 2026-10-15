@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'coerencia', name: 'Coerencia de cache', icon: '🧊', desc: 'MSI, MESI e MOESI do zero: o mesmo programa custa 1.018 vezes mais transacoes quando dois dados cabem na mesma linha', url: GH + 'coerencia#readme', repo: GH + 'coerencia', langs: ['java'], kind: 'biblioteca' },
   { slug: 'impasse', name: 'Impasse', icon: '🔒', desc: 'Banqueiro, ordem total e deteccao por ciclo: ordenar recursos nao previne nada quando quem ordena e o sistema', url: GH + 'impasse#readme', repo: GH + 'impasse', langs: ['java'], kind: 'biblioteca' },
   { slug: 'confiavel', name: 'Transporte confiavel', icon: '📦', desc: 'Parada e espera, volta N e repeticao seletiva: a janela que passa da metade do espaco de numeros entrega dado errado', url: GH + 'confiavel#readme', repo: GH + 'confiavel', langs: ['java'], kind: 'biblioteca' },
   { slug: 'congestionamento', name: 'Controle de congestionamento', icon: '🚦', desc: 'Um bit por rodada: so o aumento somado com a queda multiplicada converge para a divisao justa', url: GH + 'congestionamento#readme', repo: GH + 'congestionamento', langs: ['java'], kind: 'biblioteca' },
