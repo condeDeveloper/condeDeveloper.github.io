@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'hamming', name: 'Codigo de Hamming', icon: '🩹', desc: 'Sem o bit extra ele corrige errado 100% dos erros duplos, e corrige com confianca', url: GH + 'hamming#readme', repo: GH + 'hamming', langs: ['java'], kind: 'biblioteca' },
   { slug: 'strassen', name: 'Multiplicacao de matrizes', icon: '✖️', desc: 'Ingenua, por blocos e Strassen contados em operacoes: o Strassen puro faz 1,19 vez a aritmetica da ingenua', url: GH + 'strassen#readme', repo: GH + 'strassen', langs: ['java'], kind: 'biblioteca' },
   { slug: 'salteada', name: 'Lista salteada', icon: '🪜', desc: 'Atalhos sorteados sem equilibrar nada: com p=1/4 ela gasta um terco dos ponteiros e compara a mesma coisa', url: GH + 'salteada#readme', repo: GH + 'salteada', langs: ['java'], kind: 'biblioteca' },
   { slug: 'eleicao', name: 'Eleicao de lider em anel', icon: '👑', desc: 'Le Lann, Chang e Roberts e sondagem dupla: o algoritmo de n log n gasta quatro vezes mais mensagens num anel qualquer', url: GH + 'eleicao#readme', repo: GH + 'eleicao', langs: ['java'], kind: 'biblioteca' },
