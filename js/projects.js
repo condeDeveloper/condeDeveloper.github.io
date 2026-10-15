@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'redes', name: 'Redes de ordenacao', icon: '🔀', desc: 'O principio zero um troca 20 trilhoes de testes por 65.536, e e ele que torna o juiz possivel', url: GH + 'redes#readme', repo: GH + 'redes', langs: ['java'], kind: 'biblioteca' },
   { slug: 'hamming', name: 'Codigo de Hamming', icon: '🩹', desc: 'Sem o bit extra ele corrige errado 100% dos erros duplos, e corrige com confianca', url: GH + 'hamming#readme', repo: GH + 'hamming', langs: ['java'], kind: 'biblioteca' },
   { slug: 'strassen', name: 'Multiplicacao de matrizes', icon: '✖️', desc: 'Ingenua, por blocos e Strassen contados em operacoes: o Strassen puro faz 1,19 vez a aritmetica da ingenua', url: GH + 'strassen#readme', repo: GH + 'strassen', langs: ['java'], kind: 'biblioteca' },
   { slug: 'salteada', name: 'Lista salteada', icon: '🪜', desc: 'Atalhos sorteados sem equilibrar nada: com p=1/4 ela gasta um terco dos ponteiros e compara a mesma coisa', url: GH + 'salteada#readme', repo: GH + 'salteada', langs: ['java'], kind: 'biblioteca' },
