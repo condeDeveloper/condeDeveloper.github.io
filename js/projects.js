@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'moedas', name: 'Problema do troco', icon: '🪙', desc: 'O guloso so e sempre otimo em 142 dos 969 sistemas de quatro moedas: funcionar e a excecao', url: GH + 'moedas#readme', repo: GH + 'moedas', langs: ['java'], kind: 'biblioteca' },
   { slug: 'hanoi', name: 'Torre de Hanoi', icon: '🗼', desc: 'Partir a pilha no meio e otimo ate 8 discos e erra a partir de 9, que e bem depois de voce parar de desconfiar', url: GH + 'hanoi#readme', repo: GH + 'hanoi', langs: ['java'], kind: 'biblioteca' },
   { slug: 'multipadrao', name: 'Busca de varios padroes', icon: '🔎', desc: 'Aho-Corasick le 64 letras e devolve 2.080 ocorrencias: linear e a busca, nao a resposta', url: GH + 'multipadrao#readme', repo: GH + 'multipadrao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'celular', name: 'Automato celular', icon: '🧬', desc: 'So 6 regras sao reversiveis e verdade so se voce exigir que valha para todo tamanho de anel: num anel impar sao 16', url: GH + 'celular#readme', repo: GH + 'celular', langs: ['java'], kind: 'biblioteca' },
