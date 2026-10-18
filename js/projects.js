@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'uniao', name: 'Conjuntos disjuntos', icon: '🔗', desc: 'Encurtar caminho nao derruba o pior caso, so a media: ele conserta depois, nao previne', url: GH + 'uniao#readme', repo: GH + 'uniao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'huffman', name: 'Codigo de Huffman', icon: '🗜️', desc: 'A arvore otima quase nunca e unica: 69 por cento das distribuicoes de seis simbolos tem empate, e o recorde sao 15 codigos', url: GH + 'huffman#readme', repo: GH + 'huffman', langs: ['java'], kind: 'biblioteca' },
   { slug: 'moedas', name: 'Problema do troco', icon: '🪙', desc: 'O guloso so e sempre otimo em 142 dos 969 sistemas de quatro moedas: funcionar e a excecao', url: GH + 'moedas#readme', repo: GH + 'moedas', langs: ['java'], kind: 'biblioteca' },
   { slug: 'hanoi', name: 'Torre de Hanoi', icon: '🗼', desc: 'Partir a pilha no meio e otimo ate 8 discos e erra a partir de 9, que e bem depois de voce parar de desconfiar', url: GH + 'hanoi#readme', repo: GH + 'hanoi', langs: ['java'], kind: 'biblioteca' },
