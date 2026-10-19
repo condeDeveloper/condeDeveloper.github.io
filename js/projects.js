@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'particoes', name: 'Particoes de inteiros', icon: '➕', desc: 'As congruencias de Ramanujan valem para 5, 7 e 11; a mesma receita com 13 acerta 3 de 77, pior que o acaso', url: GH + 'particoes#readme', repo: GH + 'particoes', langs: ['java'], kind: 'biblioteca' },
   { slug: 'quadrado', name: 'Quadrados magicos', icon: '🔢', desc: 'Os 880 de Frenicle contados de novo: 880 e 7.040 sao os dois verdadeiros, e quase sempre se cita um sem dizer qual', url: GH + 'quadrado#readme', repo: GH + 'quadrado', langs: ['java'], kind: 'biblioteca' },
   { slug: 'uniao', name: 'Conjuntos disjuntos', icon: '🔗', desc: 'Encurtar caminho nao derruba o pior caso, so a media: ele conserta depois, nao previne', url: GH + 'uniao#readme', repo: GH + 'uniao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'huffman', name: 'Codigo de Huffman', icon: '🗜️', desc: 'A arvore otima quase nunca e unica: 69 por cento das distribuicoes de seis simbolos tem empate, e o recorde sao 15 codigos', url: GH + 'huffman#readme', repo: GH + 'huffman', langs: ['java'], kind: 'biblioteca' },
