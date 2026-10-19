@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'quadrado', name: 'Quadrados magicos', icon: '🔢', desc: 'Os 880 de Frenicle contados de novo: 880 e 7.040 sao os dois verdadeiros, e quase sempre se cita um sem dizer qual', url: GH + 'quadrado#readme', repo: GH + 'quadrado', langs: ['java'], kind: 'biblioteca' },
   { slug: 'uniao', name: 'Conjuntos disjuntos', icon: '🔗', desc: 'Encurtar caminho nao derruba o pior caso, so a media: ele conserta depois, nao previne', url: GH + 'uniao#readme', repo: GH + 'uniao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'huffman', name: 'Codigo de Huffman', icon: '🗜️', desc: 'A arvore otima quase nunca e unica: 69 por cento das distribuicoes de seis simbolos tem empate, e o recorde sao 15 codigos', url: GH + 'huffman#readme', repo: GH + 'huffman', langs: ['java'], kind: 'biblioteca' },
   { slug: 'moedas', name: 'Problema do troco', icon: '🪙', desc: 'O guloso so e sempre otimo em 142 dos 969 sistemas de quatro moedas: funcionar e a excecao', url: GH + 'moedas#readme', repo: GH + 'moedas', langs: ['java'], kind: 'biblioteca' },
