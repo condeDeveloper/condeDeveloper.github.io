@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'rainhas', name: 'Oito rainhas', icon: '♛', desc: '92 dividido por 8 da 11,5: as 12 fundamentais so fecham porque quatro solucoes sao iguais a si mesmas giradas', url: GH + 'rainhas#readme', repo: GH + 'rainhas', langs: ['java'], kind: 'biblioteca' },
   { slug: 'luhn', name: 'Digito verificador de Luhn', icon: '💳', desc: 'A falha famosa do Luhn nao e a pior: ele deixa passar 09 e 90, e NENHUMA troca entre digitos separados por uma casa', url: GH + 'luhn#readme', repo: GH + 'luhn', langs: ['java'], kind: 'biblioteca' },
   { slug: 'fechamento', name: 'Fecho transitivo', icon: '🕸️', desc: 'Trocar a ordem dos lacos de Warshall nao erra NENHUMA vez com dois vertices: por isso o bug atravessa revisao', url: GH + 'fechamento#readme', repo: GH + 'fechamento', langs: ['java'], kind: 'biblioteca' },
   { slug: 'particoes', name: 'Particoes de inteiros', icon: '➕', desc: 'As congruencias de Ramanujan valem para 5, 7 e 11; a mesma receita com 13 acerta 3 de 77, pior que o acaso', url: GH + 'particoes#readme', repo: GH + 'particoes', langs: ['java'], kind: 'biblioteca' },
