@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'fracoes', name: 'Fracoes continuas', icon: '➗', desc: 'Denominador maior nao e aproximacao melhor: arredondar com o teto acerta em 39 de 2.000 casos, e 22/7 so reina ate 56', url: GH + 'fracoes#readme', repo: GH + 'fracoes', langs: ['java'], kind: 'biblioteca' },
   { slug: 'crivo', name: 'Crivo de Eratostenes', icon: '🧮', desc: 'A roda de 2 e 3 risca exatamente a mesma coisa que pular pares: o ganho inteiro sao 527 visitas em 13,9 milhoes de operacoes', url: GH + 'crivo#readme', repo: GH + 'crivo', langs: ['java'], kind: 'biblioteca' },
   { slug: 'collatz', name: 'Conjectura de Collatz', icon: '🌀', desc: 'O caminho mais longo nao e o mais alto: 837.799 leva 524 passos e sobe 2,9 bilhoes; 704.511 leva 242 e sobe 57 bilhoes', url: GH + 'collatz#readme', repo: GH + 'collatz', langs: ['java'], kind: 'biblioteca' },
   { slug: 'romanos', name: 'Numeros romanos', icon: '🏛️', desc: 'A regra de ler que todo mundo ensina aceita 117.401 das 117.649 sequencias de seis letras, e so 687 sao numeral', url: GH + 'romanos#readme', repo: GH + 'romanos', langs: ['java'], kind: 'biblioteca' },
