@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'dados', name: 'Dados nao transitivos', icon: '🎲', desc: '581 trios fazem pedra papel e tesoura entre 462 dados, e num deles os tres tem exatamente a mesma media', url: GH + 'dados#readme', repo: GH + 'dados', langs: ['java'], kind: 'biblioteca' },
   { slug: 'labirinto', name: 'Labirintos', icon: '🧩', desc: 'A ressalva sobre a mao direita esta no lugar errado: com a saida no canto ela nao falhou em nenhum dos 431 labirintos conexos', url: GH + 'labirinto#readme', repo: GH + 'labirinto', langs: ['java'], kind: 'biblioteca' },
   { slug: 'catalao', name: 'Numeros de Catalan', icon: '🌳', desc: 'A formula do produto esta certa em matematica e devolve 4 onde o certo e 5, sem estourar e sem avisar', url: GH + 'catalao#readme', repo: GH + 'catalao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'fracoes', name: 'Fracoes continuas', icon: '➗', desc: 'Denominador maior nao e aproximacao melhor: arredondar com o teto acerta em 39 de 2.000 casos, e 22/7 so reina ate 56', url: GH + 'fracoes#readme', repo: GH + 'fracoes', langs: ['java'], kind: 'biblioteca' },
