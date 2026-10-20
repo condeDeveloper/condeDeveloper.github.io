@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'dominos', name: 'Cobertura por dominos', icon: '🁣', desc: 'O argumento das cores explica 73,5 por cento dos tabuleiros que nao se cobrem: o resto precisa de busca', url: GH + 'dominos#readme', repo: GH + 'dominos', langs: ['java'], kind: 'biblioteca' },
   { slug: 'gray', name: 'Codigo de Gray', icon: '🔢', desc: 'Com 4 bits existem 2.688 sequencias que mudam um bit por vez e fecham o ciclo: a classica e uma delas', url: GH + 'gray#readme', repo: GH + 'gray', langs: ['java'], kind: 'biblioteca' },
   { slug: 'dados', name: 'Dados nao transitivos', icon: '🎲', desc: '581 trios fazem pedra papel e tesoura entre 462 dados, e num deles os tres tem exatamente a mesma media', url: GH + 'dados#readme', repo: GH + 'dados', langs: ['java'], kind: 'biblioteca' },
   { slug: 'labirinto', name: 'Labirintos', icon: '🧩', desc: 'A ressalva sobre a mao direita esta no lugar errado: com a saida no canto ela nao falhou em nenhum dos 431 labirintos conexos', url: GH + 'labirinto#readme', repo: GH + 'labirinto', langs: ['java'], kind: 'biblioteca' },
