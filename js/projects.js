@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'ordenar', name: 'Ordenação medida', icon: '📊', desc: 'Seis algoritmos de ordenacao medidos em todas as 40.320 permutacoes de oito elementos, com comparacoes e trocas contadas pela mesma regua e o limite teorico de log2(n!) como ancora.', url: GH + 'ordenar#readme', repo: GH + 'ordenar', langs: ['Java'], kind: 'biblioteca' },
   { slug: 'permutacoes', name: 'Permutacoes', icon: '🔀', desc: 'A chance de o amigo oculto dar certo para de mudar em seis pessoas: convidar mais gente nao altera nada', url: GH + 'permutacoes#readme', repo: GH + 'permutacoes', langs: ['java'], kind: 'biblioteca' },
   { slug: 'bases', name: 'Bases numericas', icon: '🔟', desc: 'Somando dois centesimos a igualdade falha em 2.106 de 9.801 casos, e base 60 deixa 34 fracoes terminarem contra 15 da base 10', url: GH + 'bases#readme', repo: GH + 'bases', langs: ['java'], kind: 'biblioteca' },
   { slug: 'colisoes', name: 'Colisao de hash', icon: '💥', desc: 'Numa tabela de 1024 posicoes a colisao passa de metade com 3,7 por cento de ocupacao: colisao nao e sinal de tabela cheia', url: GH + 'colisoes#readme', repo: GH + 'colisoes', langs: ['java'], kind: 'biblioteca' },
