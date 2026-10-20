@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'bases', name: 'Bases numericas', icon: '🔟', desc: 'Somando dois centesimos a igualdade falha em 2.106 de 9.801 casos, e base 60 deixa 34 fracoes terminarem contra 15 da base 10', url: GH + 'bases#readme', repo: GH + 'bases', langs: ['java'], kind: 'biblioteca' },
   { slug: 'colisoes', name: 'Colisao de hash', icon: '💥', desc: 'Numa tabela de 1024 posicoes a colisao passa de metade com 3,7 por cento de ocupacao: colisao nao e sinal de tabela cheia', url: GH + 'colisoes#readme', repo: GH + 'colisoes', langs: ['java'], kind: 'biblioteca' },
   { slug: 'dominos', name: 'Cobertura por dominos', icon: '🁣', desc: 'O argumento das cores explica 73,5 por cento dos tabuleiros que nao se cobrem: o resto precisa de busca', url: GH + 'dominos#readme', repo: GH + 'dominos', langs: ['java'], kind: 'biblioteca' },
   { slug: 'gray', name: 'Codigo de Gray', icon: '🔢', desc: 'Com 4 bits existem 2.688 sequencias que mudam um bit por vez e fecham o ciclo: a classica e uma delas', url: GH + 'gray#readme', repo: GH + 'gray', langs: ['java'], kind: 'biblioteca' },
