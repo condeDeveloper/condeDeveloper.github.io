@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'exclusao', name: 'Exclusão mútua verificada', icon: '🧵', desc: 'Oito protocolos de exclusão mútua verificados pela varredura de todos os entrelaçamentos possíveis, com juiz sobre o grafo de estados e o contraexemplo exato de cada defeito', url: GH + 'exclusao#readme', repo: GH + 'exclusao', langs: ['java'], kind: 'biblioteca' },
   { slug: 'balanceada', name: 'Árvore comum contra AVL', icon: '🎋', desc: 'Árvore de busca comum contra AVL, varridas em todas as 46.233 ordens de inserção e em todas as formas de AVL até vinte nós, com juiz independente e a contagem de formas conferida contra a OEIS A006265', url: GH + 'balanceada#readme', repo: GH + 'balanceada', langs: ['java'], kind: 'biblioteca' },
   { slug: 'ordenar', name: 'Ordenação medida', icon: '📊', desc: 'Seis algoritmos de ordenacao medidos em todas as 40.320 permutacoes de oito elementos, com comparacoes e trocas contadas pela mesma regua e o limite teorico de log2(n!) como ancora.', url: GH + 'ordenar#readme', repo: GH + 'ordenar', langs: ['Java'], kind: 'biblioteca' },
   { slug: 'permutacoes', name: 'Permutacoes', icon: '🔀', desc: 'A chance de o amigo oculto dar certo para de mudar em seis pessoas: convidar mais gente nao altera nada', url: GH + 'permutacoes#readme', repo: GH + 'permutacoes', langs: ['java'], kind: 'biblioteca' },
