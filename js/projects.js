@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'filosofos', name: 'O jantar dos filósofos', icon: '🍝', desc: 'As cinco estrategias julgadas pela varredura: a ingenua e a hierarquia tem o mesmo grafo de 392 estados e a diferenca e um unico estado travado', url: GH + 'filosofos#readme', repo: GH + 'filosofos', langs: ['java'], kind: 'biblioteca' },
   { slug: 'leitores', name: 'Leitores e escritores', icon: '📖', desc: 'As tres politicas classicas julgadas pela varredura de todos os entrelacamentos, sem um unico semaforo: preferir escritor produz mais leitura simultanea que preferir leitor', url: GH + 'leitores#readme', repo: GH + 'leitores', langs: ['java'], kind: 'biblioteca' },
   { slug: 'barreira', name: 'Barreiras de sincronização', icon: '🚧', desc: 'Cinco barreiras medidas pela varredura de todos os entrelaçamentos: quatro estão erradas e cada uma quebra de um jeito diferente, e com uma barreira só quatro delas passam', url: GH + 'barreira#readme', repo: GH + 'barreira', langs: ['java'], kind: 'biblioteca' },
   { slug: 'semaforo', name: 'Semáforos de Dijkstra', icon: '🚥', desc: 'Produtor-consumidor com semáforos, verificado pela varredura de todos os entrelaçamentos: com um lugar no buffer o mutex é dispensável, e quem o V acorda decide quem espera para sempre', url: GH + 'semaforo#readme', repo: GH + 'semaforo', langs: ['java'], kind: 'biblioteca' },
