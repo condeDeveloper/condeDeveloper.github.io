@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'fumantes', name: 'Os fumantes de cigarro', icon: '🔥', desc: 'A versao obvia trava em tres passos, e nas corretas os tres fumantes ainda podem nunca fumar: a fome vem do agente e nenhum protocolo a conserta', url: GH + 'fumantes#readme', repo: GH + 'fumantes', langs: ['java'], kind: 'biblioteca' },
   { slug: 'josephus', name: 'O problema de Josephus', icon: '🎡', desc: 'A formula fechada so existe para o passo 2, e ela e a rotacao binaria de n: a simulacao honesta julga as tres maneiras', url: GH + 'josephus#readme', repo: GH + 'josephus', langs: ['java'], kind: 'biblioteca' },
   { slug: 'balanca', name: 'A moeda falsa', icon: '🪤', desc: 'O limite de contagem contra a busca exata: com duas moedas e sentido desconhecido o problema nao e caro, e impossivel', url: GH + 'balanca#readme', repo: GH + 'balanca', langs: ['java'], kind: 'biblioteca' },
   { slug: 'empacotamento', name: 'Empacotamento em caixas', icon: '🏷️', desc: 'Seis heuristicas contra o otimo exato em 823.543 sequencias: ordenar do maior para o menor leva o acerto de 90 para 99,97 por cento e piora o resultado em 154 delas', url: GH + 'empacotamento#readme', repo: GH + 'empacotamento', langs: ['java'], kind: 'biblioteca' },
