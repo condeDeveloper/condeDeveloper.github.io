@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'balanca', name: 'A moeda falsa', icon: '🪤', desc: 'O limite de contagem contra a busca exata: com duas moedas e sentido desconhecido o problema nao e caro, e impossivel', url: GH + 'balanca#readme', repo: GH + 'balanca', langs: ['java'], kind: 'biblioteca' },
   { slug: 'empacotamento', name: 'Empacotamento em caixas', icon: '🏷️', desc: 'Seis heuristicas contra o otimo exato em 823.543 sequencias: ordenar do maior para o menor leva o acerto de 90 para 99,97 por cento e piora o resultado em 154 delas', url: GH + 'empacotamento#readme', repo: GH + 'empacotamento', langs: ['java'], kind: 'biblioteca' },
   { slug: 'secretaria', name: 'Parada ótima', icon: '🧑‍💼', desc: 'A regra dos 37 por cento varrida em todas as n! ordens de chegada: em tres dos dez primeiros tamanhos a formula n/e aponta o limiar errado', url: GH + 'secretaria#readme', repo: GH + 'secretaria', langs: ['java'], kind: 'biblioteca' },
   { slug: 'barbeiro', name: 'O barbeiro dorminhoco', icon: '💈', desc: 'A fresta entre olhar a sala e deitar, medida pela varredura: o terceiro cliente esconde o defeito trocando o travamento por giro em falso', url: GH + 'barbeiro#readme', repo: GH + 'barbeiro', langs: ['java'], kind: 'biblioteca' },
