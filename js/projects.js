@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'secretaria', name: 'Parada ótima', icon: '🧑‍💼', desc: 'A regra dos 37 por cento varrida em todas as n! ordens de chegada: em tres dos dez primeiros tamanhos a formula n/e aponta o limiar errado', url: GH + 'secretaria#readme', repo: GH + 'secretaria', langs: ['java'], kind: 'biblioteca' },
   { slug: 'barbeiro', name: 'O barbeiro dorminhoco', icon: '💈', desc: 'A fresta entre olhar a sala e deitar, medida pela varredura: o terceiro cliente esconde o defeito trocando o travamento por giro em falso', url: GH + 'barbeiro#readme', repo: GH + 'barbeiro', langs: ['java'], kind: 'biblioteca' },
   { slug: 'filosofos', name: 'O jantar dos filósofos', icon: '🍝', desc: 'As cinco estrategias julgadas pela varredura: a ingenua e a hierarquia tem o mesmo grafo de 392 estados e a diferenca e um unico estado travado', url: GH + 'filosofos#readme', repo: GH + 'filosofos', langs: ['java'], kind: 'biblioteca' },
   { slug: 'leitores', name: 'Leitores e escritores', icon: '📖', desc: 'As tres politicas classicas julgadas pela varredura de todos os entrelacamentos, sem um unico semaforo: preferir escritor produz mais leitura simultanea que preferir leitor', url: GH + 'leitores#readme', repo: GH + 'leitores', langs: ['java'], kind: 'biblioteca' },
