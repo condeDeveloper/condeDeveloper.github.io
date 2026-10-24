@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'luzes', name: 'O jogo das luzes', icon: '💡', desc: 'Apertar duas vezes nao faz nada e a ordem nao importa: o jogo vira sistema linear, conferido nos 33 milhoes de paineis do 5x5', url: GH + 'luzes#readme', repo: GH + 'luzes', langs: ['java'], kind: 'biblioteca' },
   { slug: 'deslizante', name: 'O quebra-cabeca deslizante', icon: '🔢', desc: 'Metade dos embaralhamentos nao tem solucao, e o chute errado que exagera em 7 dos 181.440 arranjos nunca devolve caminho errado', url: GH + 'deslizante#readme', repo: GH + 'deslizante', langs: ['java'], kind: 'biblioteca' },
   { slug: 'portas', name: 'As tres portas', icon: '🚪', desc: 'Monty Hall em fracao exata, com todos os jogos enumerados: a vantagem de trocar vai de 1,13x a 9,00x e a resposta esta no apresentador', url: GH + 'portas#readme', repo: GH + 'portas', langs: ['java'], kind: 'biblioteca' },
   { slug: 'ruina', name: 'A ruina do jogador', icon: '🎰', desc: 'As formulas fechadas conferidas por um sistema tridiagonal: capital grande nao protege e no jogo justo a estrategia nao muda nada', url: GH + 'ruina#readme', repo: GH + 'ruina', langs: ['java'], kind: 'biblioteca' },
