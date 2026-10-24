@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'portas', name: 'As tres portas', icon: '🚪', desc: 'Monty Hall em fracao exata, com todos os jogos enumerados: a vantagem de trocar vai de 1,13x a 9,00x e a resposta esta no apresentador', url: GH + 'portas#readme', repo: GH + 'portas', langs: ['java'], kind: 'biblioteca' },
   { slug: 'ruina', name: 'A ruina do jogador', icon: '🎰', desc: 'As formulas fechadas conferidas por um sistema tridiagonal: capital grande nao protege e no jogo justo a estrategia nao muda nada', url: GH + 'ruina#readme', repo: GH + 'ruina', langs: ['java'], kind: 'biblioteca' },
   { slug: 'figurinhas', name: 'O album de figurinhas', icon: '🃏', desc: 'A formula harmonica como juiz de uma programacao dinamica: o pacote fechado economiza 1,6% e a ultima figurinha custa 14,1% do album', url: GH + 'figurinhas#readme', repo: GH + 'figurinhas', langs: ['java'], kind: 'biblioteca' },
   { slug: 'panquecas', name: 'Ordenacao por panquecas', icon: '🥞', desc: 'O minimo de viradas nao sai de formula nenhuma, sai de busca: o pior caso pula o 6 e o guloso gasta 37% a mais', url: GH + 'panquecas#readme', repo: GH + 'panquecas', langs: ['java'], kind: 'biblioteca' },
