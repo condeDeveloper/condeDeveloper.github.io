@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'jarros', name: 'O problema dos jarros', icon: '🫗', desc: 'A regra do mdc conferida alvo por alvo em todo par ate 14, e a fonte errada custando nove vezes o minimo', url: GH + 'jarros#readme', repo: GH + 'jarros', langs: ['java'], kind: 'biblioteca' },
   { slug: 'travessia', name: 'A travessia do rio', icon: '🛶', desc: 'A varredura separa nao consegui de nao da: com quatro pares e barco de dois o grupo maior tem MENOS situacoes alcancaveis que o de tres', url: GH + 'travessia#readme', repo: GH + 'travessia', langs: ['java'], kind: 'biblioteca' },
   { slug: 'luzes', name: 'O jogo das luzes', icon: '💡', desc: 'Apertar duas vezes nao faz nada e a ordem nao importa: o jogo vira sistema linear, conferido nos 33 milhoes de paineis do 5x5', url: GH + 'luzes#readme', repo: GH + 'luzes', langs: ['java'], kind: 'biblioteca' },
   { slug: 'deslizante', name: 'O quebra-cabeca deslizante', icon: '🔢', desc: 'Metade dos embaralhamentos nao tem solucao, e o chute errado que exagera em 7 dos 181.440 arranjos nunca devolve caminho errado', url: GH + 'deslizante#readme', repo: GH + 'deslizante', langs: ['java'], kind: 'biblioteca' },
