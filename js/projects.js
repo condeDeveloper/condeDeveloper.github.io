@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'minas', name: 'Campo minado: o que da para provar', icon: '💣', desc: 'A enumeracao completa das distribuicoes de minas contra a regra de olhar um numero por vez: 3 vitorias contra 51 no especialista', url: GH + 'minas#readme', repo: GH + 'minas', langs: ['java'], kind: 'biblioteca' },
   { slug: 'resta-um', name: 'Resta um', icon: '🎯', desc: 'Um rotulo que decide 28 das 33 casas sem abrir uma posicao, e a prova de que um invariante nunca poda no meio da busca', url: GH + 'resta-um#readme', repo: GH + 'resta-um', langs: ['java'], kind: 'biblioteca' },
   { slug: 'jarros', name: 'O problema dos jarros', icon: '🫗', desc: 'A regra do mdc conferida alvo por alvo em todo par ate 14, e a fonte errada custando nove vezes o minimo', url: GH + 'jarros#readme', repo: GH + 'jarros', langs: ['java'], kind: 'biblioteca' },
   { slug: 'travessia', name: 'A travessia do rio', icon: '🛶', desc: 'A varredura separa nao consegui de nao da: com quatro pares e barco de dois o grupo maior tem MENOS situacoes alcancaveis que o de tres', url: GH + 'travessia#readme', repo: GH + 'travessia', langs: ['java'], kind: 'biblioteca' },
