@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'cubo', name: 'O cubo 2x2 inteiro', icon: '🧩', desc: 'Os 3.674.160 estados varridos: o numero de Deus medido em 11 giros, e embaralhar com 30 giros nao e sortear', url: GH + 'cubo#readme', repo: GH + 'cubo', langs: ['java'], kind: 'biblioteca' },
   { slug: 'chapeus', name: 'O problema dos chapeus', icon: '🎩', desc: 'A estrategia boa nao acerta mais: 112 acertos e 112 erros, so que os erros cabem todos em 16 sorteios', url: GH + 'chapeus#readme', repo: GH + 'chapeus', langs: ['java'], kind: 'biblioteca' },
   { slug: 'banheiro', name: 'O banheiro unissex', icon: '🚪', desc: 'A varredura acha o defeito em 4 passos e sempre; o escalonador parecido com uma maquina de verdade o viu em 4 de 10.000 execucoes', url: GH + 'banheiro#readme', repo: GH + 'banheiro', langs: ['java'], kind: 'biblioteca' },
   { slug: 'minas', name: 'Campo minado: o que da para provar', icon: '💣', desc: 'A enumeracao completa das distribuicoes de minas contra a regra de olhar um numero por vez: 3 vitorias contra 51 no especialista', url: GH + 'minas#readme', repo: GH + 'minas', langs: ['java'], kind: 'biblioteca' },
