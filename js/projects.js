@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'chapeus', name: 'O problema dos chapeus', icon: '🎩', desc: 'A estrategia boa nao acerta mais: 112 acertos e 112 erros, so que os erros cabem todos em 16 sorteios', url: GH + 'chapeus#readme', repo: GH + 'chapeus', langs: ['java'], kind: 'biblioteca' },
   { slug: 'banheiro', name: 'O banheiro unissex', icon: '🚪', desc: 'A varredura acha o defeito em 4 passos e sempre; o escalonador parecido com uma maquina de verdade o viu em 4 de 10.000 execucoes', url: GH + 'banheiro#readme', repo: GH + 'banheiro', langs: ['java'], kind: 'biblioteca' },
   { slug: 'minas', name: 'Campo minado: o que da para provar', icon: '💣', desc: 'A enumeracao completa das distribuicoes de minas contra a regra de olhar um numero por vez: 3 vitorias contra 51 no especialista', url: GH + 'minas#readme', repo: GH + 'minas', langs: ['java'], kind: 'biblioteca' },
   { slug: 'resta-um', name: 'Resta um', icon: '🎯', desc: 'Um rotulo que decide 28 das 33 casas sem abrir uma posicao, e a prova de que um invariante nunca poda no meio da busca', url: GH + 'resta-um#readme', repo: GH + 'resta-um', langs: ['java'], kind: 'biblioteca' },
