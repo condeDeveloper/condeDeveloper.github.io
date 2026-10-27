@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'thue', name: 'Palavras sem repeticao', icon: '🔤', desc: 'O teorema de Thue por forca bruta: duas letras morrem na quarta, tres vao ao infinito, e a raiz n-esima nao chega la', url: GH + 'thue#readme', repo: GH + 'thue', langs: ['java'], kind: 'biblioteca' },
   { slug: 'mastermind', name: 'Mastermind', icon: '🎯', desc: 'A resposta conferida por dois caminhos em 1.679.616 pares, e cinco estrategias contra os 1.296 segredos', url: GH + 'mastermind#readme', repo: GH + 'mastermind', langs: ['java'], kind: 'biblioteca' },
   { slug: 'langford', name: 'Sequencias de Langford', icon: '🔢', desc: 'Cinco motores de busca achando as mesmas filas, e a descoberta de que o DLX sem heuristica E o backtracking ingenuo', url: GH + 'langford#readme', repo: GH + 'langford', langs: ['java'], kind: 'biblioteca' },
   { slug: 'prisioneiros', name: 'Os 100 prisioneiros', icon: '🔑', desc: 'Todas as permutacoes jogadas contra tres contas fechadas: a chance nao desce de 31% nem com um milhao de pessoas', url: GH + 'prisioneiros#readme', repo: GH + 'prisioneiros', langs: ['java'], kind: 'biblioteca' },
