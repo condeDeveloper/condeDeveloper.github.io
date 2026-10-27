@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'mastermind', name: 'Mastermind', icon: '🎯', desc: 'A resposta conferida por dois caminhos em 1.679.616 pares, e cinco estrategias contra os 1.296 segredos', url: GH + 'mastermind#readme', repo: GH + 'mastermind', langs: ['java'], kind: 'biblioteca' },
   { slug: 'langford', name: 'Sequencias de Langford', icon: '🔢', desc: 'Cinco motores de busca achando as mesmas filas, e a descoberta de que o DLX sem heuristica E o backtracking ingenuo', url: GH + 'langford#readme', repo: GH + 'langford', langs: ['java'], kind: 'biblioteca' },
   { slug: 'prisioneiros', name: 'Os 100 prisioneiros', icon: '🔑', desc: 'Todas as permutacoes jogadas contra tres contas fechadas: a chance nao desce de 31% nem com um milhao de pessoas', url: GH + 'prisioneiros#readme', repo: GH + 'prisioneiros', langs: ['java'], kind: 'biblioteca' },
   { slug: 'cubo', name: 'O cubo 2x2 inteiro', icon: '🧩', desc: 'Os 3.674.160 estados varridos: o numero de Deus medido em 11 giros, e embaralhar com 30 giros nao e sortear', url: GH + 'cubo#readme', repo: GH + 'cubo', langs: ['java'], kind: 'biblioteca' },
