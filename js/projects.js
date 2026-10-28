@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'divisao', name: 'Divisao justa', icon: '🎂', desc: 'Com fatias indivisiveis, eu corto voce escolhe entrega divisao sem inveja em 57% dos bolos e o rodizio simples em 80%', url: GH + 'divisao#readme', repo: GH + 'divisao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'zebra', name: 'O enigma da zebra', icon: '🦓', desc: 'Os 32.768 subconjuntos de pistas varridos: so dois deixam solucao unica, e um deles joga fora a ultima pista', url: GH + 'zebra#readme', repo: GH + 'zebra', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'selos', name: 'Selos e o numero de Frobenius', icon: '📮', desc: 'O maior valor que nao da para montar, varrido e conferido por Sylvester: com quatro selos no envelope as potencias de dois alcancam metade', url: GH + 'selos#readme', repo: GH + 'selos', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'cavalo', name: 'O passeio do cavalo', icon: '🐴', desc: 'Passeios contados um por um: a regra de Warnsdorff erra em metade das casas como estrategia e acerta sem um passo atras como ordem', url: GH + 'cavalo#readme', repo: GH + 'cavalo', langs: ['csharp'], kind: 'biblioteca' },
