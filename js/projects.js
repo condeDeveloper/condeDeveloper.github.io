@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'criptaritmo', name: 'Criptaritmos', icon: '➕', desc: 'Todos os criptaritmos de um formato varridos: dos 21.147 de tres mais tres, so 365 tem solucao unica', url: GH + 'criptaritmo#readme', repo: GH + 'criptaritmo', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'latinos', name: 'Quadrados latinos', icon: '🔡', desc: 'Contados ate a ordem 7 com a varredura de todos conferindo a conta: 432 dos 576 de ordem 4 nao tem transversal nenhuma', url: GH + 'latinos#readme', repo: GH + 'latinos', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'golomb', name: 'Reguas de Golomb', icon: '📏', desc: 'Reguas varridas ate 11 marcas: a poda de espelho nao corta um no sequer, e o anel entrega o otimo de graca so ate 6 marcas', url: GH + 'golomb#readme', repo: GH + 'golomb', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'encontro', name: 'O problema do encontro', icon: '🧭', desc: 'Duas pessoas com o mesmo plano nunca se acham: 59.049 pares varridos, e o custo exato de cada conserto em fracao', url: GH + 'encontro#readme', repo: GH + 'encontro', langs: ['java'], kind: 'biblioteca' },
