@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'selos', name: 'Selos e o numero de Frobenius', icon: '📮', desc: 'O maior valor que nao da para montar, varrido e conferido por Sylvester: com quatro selos no envelope as potencias de dois alcancam metade', url: GH + 'selos#readme', repo: GH + 'selos', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'cavalo', name: 'O passeio do cavalo', icon: '🐴', desc: 'Passeios contados um por um: a regra de Warnsdorff erra em metade das casas como estrategia e acerta sem um passo atras como ordem', url: GH + 'cavalo#readme', repo: GH + 'cavalo', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'chomp', name: 'Chomp', icon: '🍫', desc: 'Varrido ate 12 por 12: o lance vencedor e unico nas 48 barras, e o argumento do roubo so acha o lance em 11 das 36', url: GH + 'chomp#readme', repo: GH + 'chomp', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'ramsey', name: 'Numeros de Ramsey', icon: '🤝', desc: 'R(3,3)=6 e R(3,4)=9 provados por varredura: as 12 coloracoes de cinco pessoas que escapam sao todas o mesmo pentagono', url: GH + 'ramsey#readme', repo: GH + 'ramsey', langs: ['csharp'], kind: 'biblioteca' },
