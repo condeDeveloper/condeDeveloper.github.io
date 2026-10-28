@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'golomb', name: 'Reguas de Golomb', icon: '📏', desc: 'Reguas varridas ate 11 marcas: a poda de espelho nao corta um no sequer, e o anel entrega o otimo de graca so ate 6 marcas', url: GH + 'golomb#readme', repo: GH + 'golomb', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'encontro', name: 'O problema do encontro', icon: '🧭', desc: 'Duas pessoas com o mesmo plano nunca se acham: 59.049 pares varridos, e o custo exato de cada conserto em fracao', url: GH + 'encontro#readme', repo: GH + 'encontro', langs: ['java'], kind: 'biblioteca' },
   { slug: 'thue', name: 'Palavras sem repeticao', icon: '🔤', desc: 'O teorema de Thue por forca bruta: duas letras morrem na quarta, tres vao ao infinito, e a raiz n-esima nao chega la', url: GH + 'thue#readme', repo: GH + 'thue', langs: ['java'], kind: 'biblioteca' },
   { slug: 'mastermind', name: 'Mastermind', icon: '🎯', desc: 'A resposta conferida por dois caminhos em 1.679.616 pares, e cinco estrategias contra os 1.296 segredos', url: GH + 'mastermind#readme', repo: GH + 'mastermind', langs: ['java'], kind: 'biblioteca' },
