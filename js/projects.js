@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'zeckendorf', name: 'Zeckendorf', icon: '🌻', desc: 'A unicidade contada em 400 numeros, e o Nim de Fibonacci por minimax: a menor jogada vencedora e a menor parcela', url: GH + 'zeckendorf#readme', repo: GH + 'zeckendorf', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'divisao', name: 'Divisao justa', icon: '🎂', desc: 'Com fatias indivisiveis, eu corto voce escolhe entrega divisao sem inveja em 57% dos bolos e o rodizio simples em 80%', url: GH + 'divisao#readme', repo: GH + 'divisao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'zebra', name: 'O enigma da zebra', icon: '🦓', desc: 'Os 32.768 subconjuntos de pistas varridos: so dois deixam solucao unica, e um deles joga fora a ultima pista', url: GH + 'zebra#readme', repo: GH + 'zebra', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'selos', name: 'Selos e o numero de Frobenius', icon: '📮', desc: 'O maior valor que nao da para montar, varrido e conferido por Sylvester: com quatro selos no envelope as potencias de dois alcancam metade', url: GH + 'selos#readme', repo: GH + 'selos', langs: ['csharp'], kind: 'biblioteca' },
