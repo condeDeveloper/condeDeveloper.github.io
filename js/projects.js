@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'ramsey', name: 'Numeros de Ramsey', icon: '🤝', desc: 'R(3,3)=6 e R(3,4)=9 provados por varredura: as 12 coloracoes de cinco pessoas que escapam sao todas o mesmo pentagono', url: GH + 'ramsey#readme', repo: GH + 'ramsey', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'pentominos', name: 'Pentominos', icon: '🧱', desc: 'As quatro caixas de 60 celulas varridas inteiras: na de 3 por 20 achar a primeira ja custa dois tercos', url: GH + 'pentominos#readme', repo: GH + 'pentominos', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'criptaritmo', name: 'Criptaritmos', icon: '➕', desc: 'Todos os criptaritmos de um formato varridos: dos 21.147 de tres mais tres, so 365 tem solucao unica', url: GH + 'criptaritmo#readme', repo: GH + 'criptaritmo', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'latinos', name: 'Quadrados latinos', icon: '🔡', desc: 'Contados ate a ordem 7 com a varredura de todos conferindo a conta: 432 dos 576 de ordem 4 nao tem transversal nenhuma', url: GH + 'latinos#readme', repo: GH + 'latinos', langs: ['csharp'], kind: 'biblioteca' },
