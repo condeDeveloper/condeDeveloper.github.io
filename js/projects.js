@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'schur', name: 'Números de Schur', icon: '➗', desc: 'Reparticoes em montes livres de soma: com treze numeros existem exatamente tres, e as duas construcoes classicas sao otimas', url: GH + 'schur#readme', repo: GH + 'schur', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'waerden', name: 'Números de Van der Waerden', icon: '🎨', desc: 'A busca visita os mesmos 158 nos de n=9 a n=30, e W(3,3)=27 sai em dois milhoes de nos contra 7,6 trilhoes de coloracoes', url: GH + 'waerden#readme', repo: GH + 'waerden', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'condorcet', name: 'O paradoxo de Condorcet', icon: '🗳️', desc: 'Com eleitorado par a maioria das eleicoes nao tem vencedor, e a menor urna em que ganhar votos faz perder tem 17 eleitores', url: GH + 'condorcet#readme', repo: GH + 'condorcet', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'noivados', name: 'Casamentos estáveis', icon: '💍', desc: 'As 46.656 rodadas varridas: quem pede leva o melhor pessoa por pessoa, mas em 73% das rodadas nao ha o que decidir', url: GH + 'noivados#readme', repo: GH + 'noivados', langs: ['csharp'], kind: 'biblioteca' },
