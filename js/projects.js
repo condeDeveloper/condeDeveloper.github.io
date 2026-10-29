@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'wythoff', name: 'Jogo de Wythoff', icon: '🪙', desc: 'Duas pilhas e um lance a mais que o Nim: a conta com double acerta 102 milhoes de valores seguidos e erra no quadragesimo Fibonacci', url: GH + 'wythoff#readme', repo: GH + 'wythoff', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'zeckendorf', name: 'Zeckendorf', icon: '🌻', desc: 'A unicidade contada em 400 numeros, e o Nim de Fibonacci por minimax: a menor jogada vencedora e a menor parcela', url: GH + 'zeckendorf#readme', repo: GH + 'zeckendorf', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'divisao', name: 'Divisao justa', icon: '🎂', desc: 'Com fatias indivisiveis, eu corto voce escolhe entrega divisao sem inveja em 57% dos bolos e o rodizio simples em 80%', url: GH + 'divisao#readme', repo: GH + 'divisao', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'zebra', name: 'O enigma da zebra', icon: '🦓', desc: 'Os 32.768 subconjuntos de pistas varridos: so dois deixam solucao unica, e um deles joga fora a ultima pista', url: GH + 'zebra#readme', repo: GH + 'zebra', langs: ['csharp'], kind: 'biblioteca' },
