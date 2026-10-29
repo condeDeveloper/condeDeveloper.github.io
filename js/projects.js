@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'kirkman', name: 'As quinze colegiais de Kirkman', icon: '👧', desc: 'Sistemas triplos de Steiner varridos: a conta obvia do numero de trios engana em metade dos tamanhos impossiveis', url: GH + 'kirkman#readme', repo: GH + 'kirkman', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'reve', name: 'O quebra-cabeça de Reve', icon: '🗼', desc: 'Hanoi com quatro hastes: a conta de Frame e Stewart conferida contra 16 milhoes de estados, e o corte otimo so e unico nos triangulares', url: GH + 'reve#readme', repo: GH + 'reve', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'cubo-soma', name: 'O cubo Soma', icon: '🧊', desc: 'As pecas derivadas e nao digitadas: 11.520 montagens que dividem por 48 sem resto, e duas pecas que nunca ocupam o centro', url: GH + 'cubo-soma#readme', repo: GH + 'cubo-soma', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'debruijn', name: 'Sequências de De Bruijn', icon: '🔁', desc: 'Contadas por tres caminhos independentes: nenhuma tem rotacao repetida, e o grafo troca quatro bilhoes de aneis por 32 arestas', url: GH + 'debruijn#readme', repo: GH + 'debruijn', langs: ['csharp'], kind: 'biblioteca' },
