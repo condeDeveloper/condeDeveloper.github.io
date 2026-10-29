@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'debruijn', name: 'Sequências de De Bruijn', icon: '🔁', desc: 'Contadas por tres caminhos independentes: nenhuma tem rotacao repetida, e o grafo troca quatro bilhoes de aneis por 32 arestas', url: GH + 'debruijn#readme', repo: GH + 'debruijn', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'polidivisivel', name: 'Números poli-divisíveis', icon: '🔟', desc: 'Os 20.456 varridos: a previsao ingenua e exata ate cinco algarismos e depois subestima sempre, e a base 7 vai mais longe que a 8', url: GH + 'polidivisivel#readme', repo: GH + 'polidivisivel', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'schur', name: 'Números de Schur', icon: '➗', desc: 'Reparticoes em montes livres de soma: com treze numeros existem exatamente tres, e as duas construcoes classicas sao otimas', url: GH + 'schur#readme', repo: GH + 'schur', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'waerden', name: 'Números de Van der Waerden', icon: '🎨', desc: 'A busca visita os mesmos 158 nos de n=9 a n=30, e W(3,3)=27 sai em dois milhoes de nos contra 7,6 trilhoes de coloracoes', url: GH + 'waerden#readme', repo: GH + 'waerden', langs: ['csharp'], kind: 'biblioteca' },
