@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'cubo-soma', name: 'O cubo Soma', icon: '🧊', desc: 'As pecas derivadas e nao digitadas: 11.520 montagens que dividem por 48 sem resto, e duas pecas que nunca ocupam o centro', url: GH + 'cubo-soma#readme', repo: GH + 'cubo-soma', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'debruijn', name: 'Sequências de De Bruijn', icon: '🔁', desc: 'Contadas por tres caminhos independentes: nenhuma tem rotacao repetida, e o grafo troca quatro bilhoes de aneis por 32 arestas', url: GH + 'debruijn#readme', repo: GH + 'debruijn', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'polidivisivel', name: 'Números poli-divisíveis', icon: '🔟', desc: 'Os 20.456 varridos: a previsao ingenua e exata ate cinco algarismos e depois subestima sempre, e a base 7 vai mais longe que a 8', url: GH + 'polidivisivel#readme', repo: GH + 'polidivisivel', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'schur', name: 'Números de Schur', icon: '➗', desc: 'Reparticoes em montes livres de soma: com treze numeros existem exatamente tres, e as duas construcoes classicas sao otimas', url: GH + 'schur#readme', repo: GH + 'schur', langs: ['csharp'], kind: 'biblioteca' },
