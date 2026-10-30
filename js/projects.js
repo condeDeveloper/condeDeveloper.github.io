@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'sperner', name: 'O teorema de Sperner', icon: '🗃️', desc: '7.836.134 anticadeias enumeradas uma a uma batendo com os numeros de Dedekind, e zero violacao da desigualdade LYM', url: GH + 'sperner#readme', repo: GH + 'sperner', langs: ['node'], kind: 'biblioteca' },
   { slug: 'cadeia-de-adicao', name: 'Cadeias de adicao', icon: '⛓️', desc: 'Quantas multiplicacoes custa uma potencia: o metodo binario nao e otimo em 56,8% dos 400 primeiros, e o limite inferior so e atingido por quem tem dois bits 1', url: GH + 'cadeia-de-adicao#readme', repo: GH + 'cadeia-de-adicao', langs: ['node'], kind: 'biblioteca' },
   { slug: 'lucas', name: 'O teorema de Lucas', icon: '🔺', desc: 'Binomial mod p pelos digitos: 11.346 celulas sem um erro em base prima, e ate 60,34% de erro quando a base e composta', url: GH + 'lucas#readme', repo: GH + 'lucas', langs: ['node'], kind: 'biblioteca' },
   { slug: 'erdos-szekeres', name: 'Erdos-Szekeres', icon: '📈', desc: 'Toda bagunca tem uma parte arrumada: 409.113 permutacoes varridas por tres caminhos, e o piso do teorema que so e atingido por duas permutacoes quando n e primo', url: GH + 'erdos-szekeres#readme', repo: GH + 'erdos-szekeres', langs: ['node'], kind: 'biblioteca' },
