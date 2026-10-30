@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'rede-de-ordenacao', name: 'Redes de ordenacao e o principio 0-1', icon: '📶', desc: 'O principio 0-1 posto a prova rede a rede em 54.540 redes sem uma divergencia, e so 12 das 7.776 redes de cinco comparadores ordenam quatro fios', url: GH + 'rede-de-ordenacao#readme', repo: GH + 'rede-de-ordenacao', langs: ['node'], kind: 'biblioteca' },
   { slug: 'euleriano', name: 'Circuitos eulerianos e o teorema BEST', icon: '🔀', desc: 'Contados andando neles e por um determinante: 7.818 grafos sem uma divergencia, e o completo de seis vertices com 247.669.456.896 circuitos que a busca nao alcanca', url: GH + 'euleriano#readme', repo: GH + 'euleriano', langs: ['node'], kind: 'biblioteca' },
   { slug: 'kirkman', name: 'As quinze colegiais de Kirkman', icon: '👧', desc: 'Sistemas triplos de Steiner varridos: a conta obvia do numero de trios engana em metade dos tamanhos impossiveis', url: GH + 'kirkman#readme', repo: GH + 'kirkman', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'reve', name: 'O quebra-cabeça de Reve', icon: '🗼', desc: 'Hanoi com quatro hastes: a conta de Frame e Stewart conferida contra 16 milhoes de estados, e o corte otimo so e unico nos triangulares', url: GH + 'reve#readme', repo: GH + 'reve', langs: ['csharp'], kind: 'biblioteca' },
