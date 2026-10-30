@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'hackenbush', name: 'Hackenbush azul-vermelho', icon: '✂️', desc: 'O valor de cada posicao por dois caminhos: 32.767 talos sem divergencia, e o talo alternado que converge para 2/3 sem nenhum finito chegar la', url: GH + 'hackenbush#readme', repo: GH + 'hackenbush', langs: ['node'], kind: 'biblioteca' },
   { slug: 'sperner', name: 'O teorema de Sperner', icon: '🗃️', desc: '7.836.134 anticadeias enumeradas uma a uma batendo com os numeros de Dedekind, e zero violacao da desigualdade LYM', url: GH + 'sperner#readme', repo: GH + 'sperner', langs: ['node'], kind: 'biblioteca' },
   { slug: 'cadeia-de-adicao', name: 'Cadeias de adicao', icon: '⛓️', desc: 'Quantas multiplicacoes custa uma potencia: o metodo binario nao e otimo em 56,8% dos 400 primeiros, e o limite inferior so e atingido por quem tem dois bits 1', url: GH + 'cadeia-de-adicao#readme', repo: GH + 'cadeia-de-adicao', langs: ['node'], kind: 'biblioteca' },
   { slug: 'lucas', name: 'O teorema de Lucas', icon: '🔺', desc: 'Binomial mod p pelos digitos: 11.346 celulas sem um erro em base prima, e ate 60,34% de erro quando a base e composta', url: GH + 'lucas#readme', repo: GH + 'lucas', langs: ['node'], kind: 'biblioteca' },
