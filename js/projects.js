@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'recaman', name: 'A sequencia de Recaman', icon: '↩️', desc: 'Recue se puder, salte se nao: um milhao de termos por duas implementacoes, recuos em 50,00% e o menor ausente indo de 19 a 1.355', url: GH + 'recaman#readme', repo: GH + 'recaman', langs: ['node'], kind: 'biblioteca' },
   { slug: 'egipcias', name: 'Fracoes egipcias', icon: '🏺', desc: 'O guloso de Fibonacci contra a expansao mais curta: erra em 497 das 3.043 fracoes, e em 8/97 gasta oito termos onde bastam tres', url: GH + 'egipcias#readme', repo: GH + 'egipcias', langs: ['node'], kind: 'biblioteca' },
   { slug: 'penney', name: 'O jogo de Penney', icon: '🎲', desc: 'Escolher depois e melhor: 1.300 pares sem divergencia entre Markov e Conway, KCC ganha de CCC em sete de oito, e o ciclo de quatro elos que so vira trio com quatro lancamentos', url: GH + 'penney#readme', repo: GH + 'penney', langs: ['node'], kind: 'biblioteca' },
   { slug: 'hackenbush', name: 'Hackenbush azul-vermelho', icon: '✂️', desc: 'O valor de cada posicao por dois caminhos: 32.767 talos sem divergencia, e o talo alternado que converge para 2/3 sem nenhum finito chegar la', url: GH + 'hackenbush#readme', repo: GH + 'hackenbush', langs: ['node'], kind: 'biblioteca' },
