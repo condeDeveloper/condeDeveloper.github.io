@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'erdos-szekeres', name: 'Erdos-Szekeres', icon: '📈', desc: 'Toda bagunca tem uma parte arrumada: 409.113 permutacoes varridas por tres caminhos, e o piso do teorema que so e atingido por duas permutacoes quando n e primo', url: GH + 'erdos-szekeres#readme', repo: GH + 'erdos-szekeres', langs: ['node'], kind: 'biblioteca' },
   { slug: 'rede-de-ordenacao', name: 'Redes de ordenacao e o principio 0-1', icon: '📶', desc: 'O principio 0-1 posto a prova rede a rede em 54.540 redes sem uma divergencia, e so 12 das 7.776 redes de cinco comparadores ordenam quatro fios', url: GH + 'rede-de-ordenacao#readme', repo: GH + 'rede-de-ordenacao', langs: ['node'], kind: 'biblioteca' },
   { slug: 'euleriano', name: 'Circuitos eulerianos e o teorema BEST', icon: '🔀', desc: 'Contados andando neles e por um determinante: 7.818 grafos sem uma divergencia, e o completo de seis vertices com 247.669.456.896 circuitos que a busca nao alcanca', url: GH + 'euleriano#readme', repo: GH + 'euleriano', langs: ['node'], kind: 'biblioteca' },
   { slug: 'kirkman', name: 'As quinze colegiais de Kirkman', icon: '👧', desc: 'Sistemas triplos de Steiner varridos: a conta obvia do numero de trios engana em metade dos tamanhos impossiveis', url: GH + 'kirkman#readme', repo: GH + 'kirkman', langs: ['csharp'], kind: 'biblioteca' },
