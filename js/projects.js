@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'penney', name: 'O jogo de Penney', icon: '🎲', desc: 'Escolher depois e melhor: 1.300 pares sem divergencia entre Markov e Conway, KCC ganha de CCC em sete de oito, e o ciclo de quatro elos que so vira trio com quatro lancamentos', url: GH + 'penney#readme', repo: GH + 'penney', langs: ['node'], kind: 'biblioteca' },
   { slug: 'hackenbush', name: 'Hackenbush azul-vermelho', icon: '✂️', desc: 'O valor de cada posicao por dois caminhos: 32.767 talos sem divergencia, e o talo alternado que converge para 2/3 sem nenhum finito chegar la', url: GH + 'hackenbush#readme', repo: GH + 'hackenbush', langs: ['node'], kind: 'biblioteca' },
   { slug: 'sperner', name: 'O teorema de Sperner', icon: '🗃️', desc: '7.836.134 anticadeias enumeradas uma a uma batendo com os numeros de Dedekind, e zero violacao da desigualdade LYM', url: GH + 'sperner#readme', repo: GH + 'sperner', langs: ['node'], kind: 'biblioteca' },
   { slug: 'cadeia-de-adicao', name: 'Cadeias de adicao', icon: '⛓️', desc: 'Quantas multiplicacoes custa uma potencia: o metodo binario nao e otimo em 56,8% dos 400 primeiros, e o limite inferior so e atingido por quem tem dois bits 1', url: GH + 'cadeia-de-adicao#readme', repo: GH + 'cadeia-de-adicao', langs: ['node'], kind: 'biblioteca' },
