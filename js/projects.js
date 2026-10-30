@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'langton', name: 'A formiga de Langton', icon: '🛣️', desc: 'A rodovia achada sem saber que existe: periodo 104 a partir do passo 10.081, e a densidade que despenca de 33% para 3,7% quando ela comeca', url: GH + 'langton#readme', repo: GH + 'langton', langs: ['node'], kind: 'biblioteca' },
   { slug: 'recaman', name: 'A sequencia de Recaman', icon: '↩️', desc: 'Recue se puder, salte se nao: um milhao de termos por duas implementacoes, recuos em 50,00% e o menor ausente indo de 19 a 1.355', url: GH + 'recaman#readme', repo: GH + 'recaman', langs: ['node'], kind: 'biblioteca' },
   { slug: 'egipcias', name: 'Fracoes egipcias', icon: '🏺', desc: 'O guloso de Fibonacci contra a expansao mais curta: erra em 497 das 3.043 fracoes, e em 8/97 gasta oito termos onde bastam tres', url: GH + 'egipcias#readme', repo: GH + 'egipcias', langs: ['node'], kind: 'biblioteca' },
   { slug: 'penney', name: 'O jogo de Penney', icon: '🎲', desc: 'Escolher depois e melhor: 1.300 pares sem divergencia entre Markov e Conway, KCC ganha de CCC em sete de oito, e o ciclo de quatro elos que so vira trio com quatro lancamentos', url: GH + 'penney#readme', repo: GH + 'penney', langs: ['node'], kind: 'biblioteca' },
