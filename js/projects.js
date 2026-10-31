@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'reciprocidade', name: 'Reciprocidade quadratica', icon: '⚖️', desc: 'O theorema aureum de Gauss conferido em 2.926 pares de primos sem falha, e o simbolo de Jacobi que nunca mente em 27 e mente em metade dos casos em 9', url: GH + 'reciprocidade#readme', repo: GH + 'reciprocidade', langs: ['python'], kind: 'biblioteca' },
   { slug: 'intersectantes', name: 'Erdos-Ko-Rado', icon: '⭐', desc: 'A maior familia de conjuntos que se cruzam dois a dois, achada por busca: bate com a formula em 35 pares, e no caso apertado as otimas pulam para 1.024', url: GH + 'intersectantes#readme', repo: GH + 'intersectantes', langs: ['python'], kind: 'biblioteca' },
   { slug: 'olha-e-fala', name: 'Olha e fala', icon: '🗣️', desc: 'A constante de Conway medida e as divisoes testadas: o termo 21 se parte em 98 pedacos independentes, e a convergencia nao e monotona', url: GH + 'olha-e-fala#readme', repo: GH + 'olha-e-fala', langs: ['python'], kind: 'biblioteca' },
   { slug: 'turan', name: 'Mantel e Turan', icon: '🔺', desc: 'Quantas arestas cabem sem formar triangulo: 2.131.018 grafos varridos um a um, o maximo batendo com n^2/4, e a fatia de livres despencando de 87,5% para 6,37%', url: GH + 'turan#readme', repo: GH + 'turan', langs: ['python'], kind: 'biblioteca' },
