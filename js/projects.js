@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'olha-e-fala', name: 'Olha e fala', icon: '🗣️', desc: 'A constante de Conway medida e as divisoes testadas: o termo 21 se parte em 98 pedacos independentes, e a convergencia nao e monotona', url: GH + 'olha-e-fala#readme', repo: GH + 'olha-e-fala', langs: ['python'], kind: 'biblioteca' },
   { slug: 'turan', name: 'Mantel e Turan', icon: '🔺', desc: 'Quantas arestas cabem sem formar triangulo: 2.131.018 grafos varridos um a um, o maximo batendo com n^2/4, e a fatia de livres despencando de 87,5% para 6,37%', url: GH + 'turan#readme', repo: GH + 'turan', langs: ['python'], kind: 'biblioteca' },
   { slug: 'mobius', name: 'Mobius e Mertens', icon: '♾️', desc: 'O recorde da razao de Mertens em um milhao de numeros esta em n=5, e a densidade de livres de quadrado chega a um milionesimo de 6/pi^2', url: GH + 'mobius#readme', repo: GH + 'mobius', langs: ['python'], kind: 'biblioteca' },
   { slug: 'pitagoricos', name: 'Ternos pitagoricos', icon: '📐', desc: 'Tres caminhos para a^2 + b^2 = c^2: a arvore de Barning entrega os 7.026 primitivos sem repetir nem esquecer um, visitando 59.301 vezes menos nos que a forca bruta', url: GH + 'pitagoricos#readme', repo: GH + 'pitagoricos', langs: ['python'], kind: 'biblioteca' },
