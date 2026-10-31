@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'turan', name: 'Mantel e Turan', icon: '🔺', desc: 'Quantas arestas cabem sem formar triangulo: 2.131.018 grafos varridos um a um, o maximo batendo com n^2/4, e a fatia de livres despencando de 87,5% para 6,37%', url: GH + 'turan#readme', repo: GH + 'turan', langs: ['python'], kind: 'biblioteca' },
   { slug: 'mobius', name: 'Mobius e Mertens', icon: '♾️', desc: 'O recorde da razao de Mertens em um milhao de numeros esta em n=5, e a densidade de livres de quadrado chega a um milionesimo de 6/pi^2', url: GH + 'mobius#readme', repo: GH + 'mobius', langs: ['python'], kind: 'biblioteca' },
   { slug: 'pitagoricos', name: 'Ternos pitagoricos', icon: '📐', desc: 'Tres caminhos para a^2 + b^2 = c^2: a arvore de Barning entrega os 7.026 primitivos sem repetir nem esquecer um, visitando 59.301 vezes menos nos que a forca bruta', url: GH + 'pitagoricos#readme', repo: GH + 'pitagoricos', langs: ['python'], kind: 'biblioteca' },
   { slug: 'bell', name: 'Particoes de conjunto', icon: '🔔', desc: 'Numeros de Bell e de Stirling por quatro caminhos: a congruencia de Touchard sem falha em 765 pares primos, e o maior termo que nao e o primeiro em 57% dos casos', url: GH + 'bell#readme', repo: GH + 'bell', langs: ['python'], kind: 'biblioteca' },
