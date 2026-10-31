@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'pitagoricos', name: 'Ternos pitagoricos', icon: '📐', desc: 'Tres caminhos para a^2 + b^2 = c^2: a arvore de Barning entrega os 7.026 primitivos sem repetir nem esquecer um, visitando 59.301 vezes menos nos que a forca bruta', url: GH + 'pitagoricos#readme', repo: GH + 'pitagoricos', langs: ['python'], kind: 'biblioteca' },
   { slug: 'bell', name: 'Particoes de conjunto', icon: '🔔', desc: 'Numeros de Bell e de Stirling por quatro caminhos: a congruencia de Touchard sem falha em 765 pares primos, e o maior termo que nao e o primeiro em 57% dos casos', url: GH + 'bell#readme', repo: GH + 'bell', langs: ['python'], kind: 'biblioteca' },
   { slug: 'menage', name: 'O problema dos casais', icon: '🍽️', desc: 'Casais numa mesa redonda sem ninguem ao lado do conjuge: quatro caminhos sem divergencia ate dezesseis casais, e o double que erra a partir de vinte e dois', url: GH + 'menage#readme', repo: GH + 'menage', langs: ['python'], kind: 'biblioteca' },
   { slug: 'totiente', name: 'A funcao totiente de Euler', icon: '🎯', desc: 'Phi por tres caminhos independentes: 42% dos pares ate mil nunca sao valor de phi, e o maior n com phi limitado nao e primorial', url: GH + 'totiente#readme', repo: GH + 'totiente', langs: ['python'], kind: 'biblioteca' },
