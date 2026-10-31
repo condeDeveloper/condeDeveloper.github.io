@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'totiente', name: 'A funcao totiente de Euler', icon: '🎯', desc: 'Phi por tres caminhos independentes: 42% dos pares ate mil nunca sao valor de phi, e o maior n com phi limitado nao e primorial', url: GH + 'totiente#readme', repo: GH + 'totiente', langs: ['python'], kind: 'biblioteca' },
   { slug: 'goldbach', name: 'A conjectura de Goldbach', icon: '✉️', desc: 'Todo par e soma de dois primos: 99.999 pares sem falha, o maior primo minimo e 383, e a heuristica de Hardy e Littlewood que erra 32% na forma dos livros', url: GH + 'goldbach#readme', repo: GH + 'goldbach', langs: ['python'], kind: 'biblioteca' },
   { slug: 'kaprekar', name: 'A rotina de Kaprekar', icon: '🔁', desc: 'Ordene os algarismos nos dois sentidos e subtraia: 1.111.100 numeros conferidos por dois caminhos sem divergencia, e a classe que entra no ciclo um passo antes do numero', url: GH + 'kaprekar#readme', repo: GH + 'kaprekar', langs: ['python'], kind: 'biblioteca' },
   { slug: 'langton', name: 'A formiga de Langton', icon: '🛣️', desc: 'A rodovia achada sem saber que existe: periodo 104 a partir do passo 10.081, e a densidade que despenca de 33% para 3,7% quando ela comeca', url: GH + 'langton#readme', repo: GH + 'langton', langs: ['node'], kind: 'biblioteca' },
