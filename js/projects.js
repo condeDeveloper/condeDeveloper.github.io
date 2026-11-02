@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'aliquotas', name: 'Sequencias aliquotas', icon: '🔁', desc: 'Perfeitos, amigaveis e sociaveis por varredura completa: dois ciclos ate cem mil, e a fatia que nao resolve medindo o teto em vez do problema', url: GH + 'aliquotas#readme', repo: GH + 'aliquotas', langs: ['java'], kind: 'biblioteca' },
   { slug: 'ciclotomicos', name: 'Polinomios ciclotomicos', icon: '🔢', desc: 'O primeiro coeficiente fora de -1, 0 e 1 aparece em n=105, e tres fatores impares nao bastam: 19 dos 77 continuam com altura 1', url: GH + 'ciclotomicos#readme', repo: GH + 'ciclotomicos', langs: ['java'], kind: 'biblioteca' },
   { slug: 'reciprocidade', name: 'Reciprocidade quadratica', icon: '⚖️', desc: 'O theorema aureum de Gauss conferido em 2.926 pares de primos sem falha, e o simbolo de Jacobi que nunca mente em 27 e mente em metade dos casos em 9', url: GH + 'reciprocidade#readme', repo: GH + 'reciprocidade', langs: ['python'], kind: 'biblioteca' },
   { slug: 'intersectantes', name: 'Erdos-Ko-Rado', icon: '⭐', desc: 'A maior familia de conjuntos que se cruzam dois a dois, achada por busca: bate com a formula em 35 pares, e no caso apertado as otimas pulam para 1.024', url: GH + 'intersectantes#readme', repo: GH + 'intersectantes', langs: ['python'], kind: 'biblioteca' },
