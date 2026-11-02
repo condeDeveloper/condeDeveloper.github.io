@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'gilbreath', name: 'Conjectura de Gilbreath', icon: '📐', desc: '199.999 linhas do triangulo de diferencas dos primos conferidas, e tirar so o numero 2 derruba tudo na primeira linha', url: GH + 'gilbreath#readme', repo: GH + 'gilbreath', langs: ['java'], kind: 'biblioteca' },
   { slug: 'mersenne', name: 'Primos de Mersenne', icon: '🔱', desc: 'Lucas-Lehmer decide 386 digitos em 4,8 ms, e entre os expoentes 127 e 521 ha 66 primos e nenhum acerto', url: GH + 'mersenne#readme', repo: GH + 'mersenne', langs: ['java'], kind: 'biblioteca' },
   { slug: 'burnside', name: 'O lema de Burnside', icon: '📿', desc: 'Colares e braceletes por media de pontos fixos: a identidade responde por 4.096 dos 4.224, e a fatia de aperiodicos oscila', url: GH + 'burnside#readme', repo: GH + 'burnside', langs: ['java'], kind: 'biblioteca' },
   { slug: 'singmaster', name: 'Conjectura de Singmaster', icon: '🔺', desc: 'Em um bilhao de numeros so sete aparecem mais de quatro vezes no triangulo de Pascal, e nenhum aparece cinco ou sete vezes', url: GH + 'singmaster#readme', repo: GH + 'singmaster', langs: ['java'], kind: 'biblioteca' },
