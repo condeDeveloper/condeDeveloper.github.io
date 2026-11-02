@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'motzkin', name: 'Numeros de Motzkin', icon: '⛰️', desc: 'Tres recorrencias conferidas contra 2,4 milhoes de caminhos construidos um a um, e metade deles tem altura maxima dois', url: GH + 'motzkin#readme', repo: GH + 'motzkin', langs: ['java'], kind: 'biblioteca' },
   { slug: 'lychrel', name: 'Numeros de Lychrel', icon: '🔄', desc: 'Some com o reverso ate virar palindromo: o 79 resolve em seis passos e o vizinho 89 precisa de vinte e quatro', url: GH + 'lychrel#readme', repo: GH + 'lychrel', langs: ['java'], kind: 'biblioteca' },
   { slug: 'gilbreath', name: 'Conjectura de Gilbreath', icon: '📐', desc: '199.999 linhas do triangulo de diferencas dos primos conferidas, e tirar so o numero 2 derruba tudo na primeira linha', url: GH + 'gilbreath#readme', repo: GH + 'gilbreath', langs: ['java'], kind: 'biblioteca' },
   { slug: 'mersenne', name: 'Primos de Mersenne', icon: '🔱', desc: 'Lucas-Lehmer decide 386 digitos em 4,8 ms, e entre os expoentes 127 e 521 ha 66 primos e nenhum acerto', url: GH + 'mersenne#readme', repo: GH + 'mersenne', langs: ['java'], kind: 'biblioteca' },
