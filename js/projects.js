@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'planaridade', name: 'Planaridade e Euler', icon: '🗺️', desc: 'De 1024 grafos com cinco vertices exatamente um nao e planar, e a cota famosa 3n-6 nao detecta o K3,3', url: GH + 'planaridade#readme', repo: GH + 'planaridade', langs: ['java'], kind: 'biblioteca' },
   { slug: 'carteiro', name: 'O carteiro chines', icon: '📬', desc: 'O menor passeio que cobre toda rua, conferido por uma busca que nao conhece a teoria em 771 grafos, e a estrela como pior caso', url: GH + 'carteiro#readme', repo: GH + 'carteiro', langs: ['java'], kind: 'biblioteca' },
   { slug: 'aliquotas', name: 'Sequencias aliquotas', icon: '🔁', desc: 'Perfeitos, amigaveis e sociaveis por varredura completa: dois ciclos ate cem mil, e a fatia que nao resolve medindo o teto em vez do problema', url: GH + 'aliquotas#readme', repo: GH + 'aliquotas', langs: ['java'], kind: 'biblioteca' },
   { slug: 'ciclotomicos', name: 'Polinomios ciclotomicos', icon: '🔢', desc: 'O primeiro coeficiente fora de -1, 0 e 1 aparece em n=105, e tres fatores impares nao bastam: 19 dos 77 continuam com altura 1', url: GH + 'ciclotomicos#readme', repo: GH + 'ciclotomicos', langs: ['java'], kind: 'biblioteca' },
