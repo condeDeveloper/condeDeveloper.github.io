@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'persistencia', name: 'Persistencia multiplicativa', icon: '✖️', desc: 'O recordista mundial achado em sete segundos varrendo multiconjuntos em vez de 10^15 numeros, e os recordistas usando apenas seis dos dez digitos', url: GH + 'persistencia#readme', repo: GH + 'persistencia', langs: ['python'], kind: 'biblioteca' },
   { slug: 'narcisistas', name: 'Numeros narcisistas', icon: '🪞', desc: 'A lista e finita e a prova nao procura nada: o teto n vezes 9^n cai abaixo do piso em 61 digitos. Varrer multiconjuntos em vez de numeros economiza dez elevado a quarenta e nove', url: GH + 'narcisistas#readme', repo: GH + 'narcisistas', langs: ['python'], kind: 'biblioteca' },
   { slug: 'taxicab', name: 'Numeros taxicab', icon: '🚕', desc: 'O 1729 de Ramanujan confirmado como o menor, e o 87.539.319 achado ate dez bilhoes: varrer pares de cubos e 4.878 vezes mais barato que varrer numeros, e a vantagem cresce', url: GH + 'taxicab#readme', repo: GH + 'taxicab', langs: ['python'], kind: 'biblioteca' },
   { slug: 'farey', name: 'Sequencias de Farey', icon: '🧮', desc: 'A identidade dos vizinhos conferida em 1.216.588 vizinhancas, e a sequencia gerada ja ordenada sem comparar dois termos; os denominadores campeoes sao todos primos', url: GH + 'farey#readme', repo: GH + 'farey', langs: ['python'], kind: 'biblioteca' },
