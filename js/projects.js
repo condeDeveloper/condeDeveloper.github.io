@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'golay', name: 'O codigo de Golay', icon: '📡', desc: 'A perfeicao provada marcando os 8.388.608 pontos do espaco um a um, sem sobrar nenhum e sem sobreposicao, e quatro erros enganando o conserto em 100% dos casos', url: GH + 'golay#readme', repo: GH + 'golay', langs: ['python'], kind: 'biblioteca' },
   { slug: 'superpermutacao', name: 'Superpermutacoes', icon: '🔗', desc: 'A minimalidade de 33 provada por 63.525.688 nos, e a construcao classica perdendo por UM caractere em seis simbolos para a cadeia de 872 achada em 2018', url: GH + 'superpermutacao#readme', repo: GH + 'superpermutacao', langs: ['python'], kind: 'biblioteca' },
   { slug: 'quatro-quadrados', name: 'O teorema de Lagrange', icon: '🔢', desc: 'O minimo de quadrados achado por busca e conferido contra a forma fechada: a fatia de um sexto nao converge, ja nasce ali, e cada potencia de quatro contribui um quarto da anterior', url: GH + 'quatro-quadrados#readme', repo: GH + 'quatro-quadrados', langs: ['python'], kind: 'biblioteca' },
   { slug: 'keith', name: 'Numeros de Keith', icon: '🪜', desc: 'Os 36 abaixo de dez milhoes, com um vazio de sete milhoes de inteiros entre os dois ultimos: decidir um numero custa logaritmo, mas nao ha peneira que pule candidatos', url: GH + 'keith#readme', repo: GH + 'keith', langs: ['python'], kind: 'biblioteca' },
