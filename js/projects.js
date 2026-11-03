@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'pell', name: 'A equacao de Pell', icon: '🔱', desc: 'D=61 tem solucao de dez digitos entre dois vizinhos de dois, e o periodo da fracao continua preve o tamanho em 90,86% dos casos enquanto o valor de D nao preve nada', url: GH + 'pell#readme', repo: GH + 'pell', langs: ['python'], kind: 'biblioteca' },
   { slug: 'ulam', name: 'Numeros de Ulam', icon: '🌀', desc: 'A busca acha a constante de Steinerberger sozinha, sem receber nenhum valor: com ela 99,8% dos termos caem do mesmo lado do circulo, e quatro das doze fatias ficam vazias', url: GH + 'ulam#readme', repo: GH + 'ulam', langs: ['python'], kind: 'biblioteca' },
   { slug: 'hadamard', name: 'Matrizes de Hadamard', icon: '➕', desc: 'A busca reproduz o teorema sem conhece-lo, e na ordem 16 acha a matriz em 262.151 nos contra 10^77 tabuleiros possiveis', url: GH + 'hadamard#readme', repo: GH + 'hadamard', langs: ['java'], kind: 'biblioteca' },
   { slug: 'motzkin', name: 'Numeros de Motzkin', icon: '⛰️', desc: 'Tres recorrencias conferidas contra 2,4 milhoes de caminhos construidos um a um, e metade deles tem altura maxima dois', url: GH + 'motzkin#readme', repo: GH + 'motzkin', langs: ['java'], kind: 'biblioteca' },
