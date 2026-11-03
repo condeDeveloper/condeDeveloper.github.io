@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'keith', name: 'Numeros de Keith', icon: '🪜', desc: 'Os 36 abaixo de dez milhoes, com um vazio de sete milhoes de inteiros entre os dois ultimos: decidir um numero custa logaritmo, mas nao ha peneira que pule candidatos', url: GH + 'keith#readme', repo: GH + 'keith', langs: ['python'], kind: 'biblioteca' },
   { slug: 'vampiros', name: 'Numeros vampiros', icon: '🧛', desc: 'Os 3.228 de oito digitos varridos, e a regra dos zeros no fim barrando exatamente os vampiros menores multiplicados por cem', url: GH + 'vampiros#readme', repo: GH + 'vampiros', langs: ['python'], kind: 'biblioteca' },
   { slug: 'persistencia', name: 'Persistencia multiplicativa', icon: '✖️', desc: 'O recordista mundial achado em sete segundos varrendo multiconjuntos em vez de 10^15 numeros, e os recordistas usando apenas seis dos dez digitos', url: GH + 'persistencia#readme', repo: GH + 'persistencia', langs: ['python'], kind: 'biblioteca' },
   { slug: 'narcisistas', name: 'Numeros narcisistas', icon: '🪞', desc: 'A lista e finita e a prova nao procura nada: o teto n vezes 9^n cai abaixo do piso em 61 digitos. Varrer multiconjuntos em vez de numeros economiza dez elevado a quarenta e nove', url: GH + 'narcisistas#readme', repo: GH + 'narcisistas', langs: ['python'], kind: 'biblioteca' },
