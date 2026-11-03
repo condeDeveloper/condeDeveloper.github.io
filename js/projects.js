@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'quatro-quadrados', name: 'O teorema de Lagrange', icon: '🔢', desc: 'O minimo de quadrados achado por busca e conferido contra a forma fechada: a fatia de um sexto nao converge, ja nasce ali, e cada potencia de quatro contribui um quarto da anterior', url: GH + 'quatro-quadrados#readme', repo: GH + 'quatro-quadrados', langs: ['python'], kind: 'biblioteca' },
   { slug: 'keith', name: 'Numeros de Keith', icon: '🪜', desc: 'Os 36 abaixo de dez milhoes, com um vazio de sete milhoes de inteiros entre os dois ultimos: decidir um numero custa logaritmo, mas nao ha peneira que pule candidatos', url: GH + 'keith#readme', repo: GH + 'keith', langs: ['python'], kind: 'biblioteca' },
   { slug: 'vampiros', name: 'Numeros vampiros', icon: '🧛', desc: 'Os 3.228 de oito digitos varridos, e a regra dos zeros no fim barrando exatamente os vampiros menores multiplicados por cem', url: GH + 'vampiros#readme', repo: GH + 'vampiros', langs: ['python'], kind: 'biblioteca' },
   { slug: 'persistencia', name: 'Persistencia multiplicativa', icon: '✖️', desc: 'O recordista mundial achado em sete segundos varrendo multiconjuntos em vez de 10^15 numeros, e os recordistas usando apenas seis dos dez digitos', url: GH + 'persistencia#readme', repo: GH + 'persistencia', langs: ['python'], kind: 'biblioteca' },
