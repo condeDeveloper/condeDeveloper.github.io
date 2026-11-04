@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'zarankiewicz', name: 'O problema de Zarankiewicz', icon: '▦', desc: 'A cota por contagem de pares preve o valor exato de n=2 ate n=7 e erra por um a partir do 8; z(9,9)=29 custa 126.725.383 nos', url: GH + 'zarankiewicz#readme', repo: GH + 'zarankiewicz', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'cobra-na-caixa', name: 'A cobra na caixa', icon: '🐍', desc: 'O maior caminho induzido no hipercubo ate a dimensao 6, com a poda de simetria dividindo o trabalho por 118 e a cobra usando as dimensoes de forma desigual', url: GH + 'cobra-na-caixa#readme', repo: GH + 'cobra-na-caixa', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'oficiais', name: 'Os 36 oficiais de Euler', icon: '🎖️', desc: 'A prova de Tarry refeita: nenhum dos 9.408 quadrados latinos reduzidos de ordem 6 tem companheiro ortogonal, em 81.311.524 nos de busca', url: GH + 'oficiais#readme', repo: GH + 'oficiais', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'prufer', name: 'O codigo de Prufer', icon: '🌳', desc: 'Tres contagens que nao se falam dao n^(n-2), e a bijecao de 1918 conferida nos dois sentidos em 18.247 arvores sem uma falha', url: GH + 'prufer#readme', repo: GH + 'prufer', langs: ['csharp'], kind: 'biblioteca' },
