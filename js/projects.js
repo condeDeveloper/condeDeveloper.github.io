@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'prufer', name: 'O codigo de Prufer', icon: '🌳', desc: 'Tres contagens que nao se falam dao n^(n-2), e a bijecao de 1918 conferida nos dois sentidos em 18.247 arvores sem uma falha', url: GH + 'prufer#readme', repo: GH + 'prufer', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'lyndon', name: 'Palavras de Lyndon', icon: '🔤', desc: 'O gerador da exatamente um passo por palavra produzida, e a definicao crua so parece mais barata que Duval ate contar o que ela copia para poder comparar', url: GH + 'lyndon#readme', repo: GH + 'lyndon', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'poligonais', name: 'O teorema poligonal de Fermat', icon: '🔷', desc: 'A partir de k=6 exatamente dois numeros exigem as k parcelas completas, e sao 2k-1 e 5k-4: o padrao bate em 55 valores de k seguidos', url: GH + 'poligonais#readme', repo: GH + 'poligonais', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'automorficos', name: 'Numeros automorficos', icon: '🪞', desc: 'Cada tamanho tem exatamente dois, eles somam 10^k+1 sem excecao, e o de dez mil casas sai em 0,35 segundo pelo passo que dobra as casas certas', url: GH + 'automorficos#readme', repo: GH + 'automorficos', langs: ['csharp'], kind: 'biblioteca' },
