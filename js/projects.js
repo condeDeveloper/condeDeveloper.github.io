@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'harshad', name: 'Numeros de Harshad', icon: '🎉', desc: 'Nao existe corrida de 6, 7, 8 ou 9 consecutivos em dez milhoes de numeros, e apenas quatro numeros sao de Harshad em todas as bases: 1, 2, 4 e 6', url: GH + 'harshad#readme', repo: GH + 'harshad', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'smith', name: 'Numeros de Smith', icon: '📞', desc: 'Nenhum numero ate um milhao e de Smith em seis bases ao mesmo tempo, e a segunda base ja corta 94% da lista de 29.928 para 1.728', url: GH + 'smith#readme', repo: GH + 'smith', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'waring', name: 'O problema de Waring', icon: '9️⃣', desc: 'g(3)=9 achado por varredura, sem consultar o valor: ate 200.000 so o 23 e o 239 precisam de nove cubos, e o ultimo que precisa de oito e o 454', url: GH + 'waring#readme', repo: GH + 'waring', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'golay', name: 'O codigo de Golay', icon: '📡', desc: 'A perfeicao provada marcando os 8.388.608 pontos do espaco um a um, sem sobrar nenhum e sem sobreposicao, e quatro erros enganando o conserto em 100% dos casos', url: GH + 'golay#readme', repo: GH + 'golay', langs: ['python'], kind: 'biblioteca' },
