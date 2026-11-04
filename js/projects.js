@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'poligonais', name: 'O teorema poligonal de Fermat', icon: '🔷', desc: 'A partir de k=6 exatamente dois numeros exigem as k parcelas completas, e sao 2k-1 e 5k-4: o padrao bate em 55 valores de k seguidos', url: GH + 'poligonais#readme', repo: GH + 'poligonais', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'automorficos', name: 'Numeros automorficos', icon: '🪞', desc: 'Cada tamanho tem exatamente dois, eles somam 10^k+1 sem excecao, e o de dez mil casas sai em 0,35 segundo pelo passo que dobra as casas certas', url: GH + 'automorficos#readme', repo: GH + 'automorficos', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'wilson', name: 'O teorema de Wilson', icon: '🧮', desc: 'Dos 44.866 compostos ate 50.000 so o 4 nao zera o fatorial anterior, e o unico teste de primalidade sem excecao custa 5.635 vezes mais que o crivo', url: GH + 'wilson#readme', repo: GH + 'wilson', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'praticos', name: 'Numeros praticos', icon: '🧰', desc: 'Ha mais praticos que primos e a vantagem cresce; o criterio de 1954 acerta os 20.000 primeiros contra a definicao literal custando 112.545 vezes menos', url: GH + 'praticos#readme', repo: GH + 'praticos', langs: ['csharp'], kind: 'biblioteca' },
