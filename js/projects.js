@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'kneser', name: 'Grafos de Kneser', icon: '🎨', desc: 'O numero cromatico medido por busca exaustiva bate com n-2k+2 em dezessete grafos, e a ordem por saturacao prova K(8,3) com 67 nos no lugar de 105.415.176', url: GH + 'kneser#readme', repo: GH + 'kneser', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'amizade', name: 'O teorema da amizade', icon: '🤝', desc: 'Varredura completa ate a ordem nove: 1.066 grafos em que cada par tem um unico amigo em comum, todos com um vertice ligado a todos os outros, e nenhum de ordem par', url: GH + 'amizade#readme', repo: GH + 'amizade', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'rsk', name: 'A correspondencia de Robinson-Schensted', icon: '📐', desc: 'O teorema de Schensted conferido em 46.233 permutacoes sem uma divergencia, e a forma mais comum sendo sempre uma escada, nunca a quadrada', url: GH + 'rsk#readme', repo: GH + 'rsk', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'zarankiewicz', name: 'O problema de Zarankiewicz', icon: '▦', desc: 'A cota por contagem de pares preve o valor exato de n=2 ate n=7 e erra por um a partir do 8; z(9,9)=29 custa 126.725.383 nos', url: GH + 'zarankiewicz#readme', repo: GH + 'zarankiewicz', langs: ['csharp'], kind: 'biblioteca' },
