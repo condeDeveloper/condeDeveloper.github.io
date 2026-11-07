@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'circulo-de-gauss', name: 'O problema do circulo de Gauss', icon: '⭕', desc: 'Em 981 dos mil primeiros raios a contagem de pontos fica abaixo da area, e tres contagens que nao compartilham uma linha batem em trezentos raios seguidos', url: GH + 'circulo-de-gauss#readme', repo: GH + 'circulo-de-gauss', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'vida', name: 'O jogo da vida', icon: '🦠', desc: 'Das 33.554.432 configuracoes da caixa 5x5 so 725 nao mudam, 90% nao tem predecessor dentro da caixa, e o maior ciclo salta de tres para dezoito com quatro celulas a mais', url: GH + 'vida#readme', repo: GH + 'vida', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'sylvester-gallai', name: 'Retas ordinarias', icon: '📏', desc: 'Nenhuma das 65.345 configuracoes da grade 4x4 e das 7.119.190 da 5x5 ficou sem reta ordinaria, e o minimo cai de seis para tres quando a grade cresce', url: GH + 'sylvester-gallai#readme', repo: GH + 'sylvester-gallai', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'kneser', name: 'Grafos de Kneser', icon: '🎨', desc: 'O numero cromatico medido por busca exaustiva bate com n-2k+2 em dezessete grafos, e a ordem por saturacao prova K(8,3) com 67 nos no lugar de 105.415.176', url: GH + 'kneser#readme', repo: GH + 'kneser', langs: ['csharp'], kind: 'biblioteca' },
