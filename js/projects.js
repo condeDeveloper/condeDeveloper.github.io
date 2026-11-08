@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'pontinhos', name: 'Pontinhos', icon: '⬜', desc: 'O jogo das caixinhas resolvido em nove tabuleiros: quem fecha toda caixa que aparece perde a tira 1x5 por 0 a 5, errando em so 7,11% das posicoes', url: PAGES + 'pontinhos/', repo: GH + 'pontinhos', langs: ['javascript'], kind: 'jogo' },
   { slug: 'nonogramas', name: 'Nonogramas', icon: '🔲', desc: 'As 33.554.432 imagens da caixa 5x5 agrupadas pelas dicas que produzem: 75,43% tem dicas que as determinam sozinhas, e 1,32% dessas ainda exigem chute', url: PAGES + 'nonogramas/', repo: GH + 'nonogramas', langs: ['javascript'], kind: 'jogo' },
   { slug: 'hex', name: 'Hex', icon: '⬡', desc: 'O teorema do sem empate conferido em 33.554.432 tabuleiros cheios, com a vitoria dividida exatamente ao meio, e as aberturas vencedoras caindo de cinco em nove para quatro em dezesseis', url: GH + 'hex#readme', repo: GH + 'hex', langs: ['csharp'], kind: 'biblioteca' },
   { slug: 'circulo-de-gauss', name: 'O problema do circulo de Gauss', icon: '⭕', desc: 'Em 981 dos mil primeiros raios a contagem de pontos fica abaixo da area, e tres contagens que nao compartilham uma linha batem em trezentos raios seguidos', url: GH + 'circulo-de-gauss#readme', repo: GH + 'circulo-de-gauss', langs: ['csharp'], kind: 'biblioteca' },
