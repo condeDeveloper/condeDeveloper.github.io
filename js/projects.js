@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'ligue-quatro', name: 'Ligue 4 resolvido', icon: '🔴', desc: 'Dez tabuleiros resolvidos por busca completa: nove empatam, e a ordem do centro para fora corta 3,5 vezes os nos do 6x3 e piora o 4x4 em 3,2 vezes', url: PAGES + 'ligue-quatro/', repo: GH + 'ligue-quatro', langs: ['javascript'], kind: 'jogo' },
   { slug: 'pontinhos', name: 'Pontinhos', icon: '⬜', desc: 'O jogo das caixinhas resolvido em nove tabuleiros: quem fecha toda caixa que aparece perde a tira 1x5 por 0 a 5, errando em so 7,11% das posicoes', url: PAGES + 'pontinhos/', repo: GH + 'pontinhos', langs: ['javascript'], kind: 'jogo' },
   { slug: 'nonogramas', name: 'Nonogramas', icon: '🔲', desc: 'As 33.554.432 imagens da caixa 5x5 agrupadas pelas dicas que produzem: 75,43% tem dicas que as determinam sozinhas, e 1,32% dessas ainda exigem chute', url: PAGES + 'nonogramas/', repo: GH + 'nonogramas', langs: ['javascript'], kind: 'jogo' },
   { slug: 'hex', name: 'Hex', icon: '⬡', desc: 'O teorema do sem empate conferido em 33.554.432 tabuleiros cheios, com a vitoria dividida exatamente ao meio, e as aberturas vencedoras caindo de cinco em nove para quatro em dezesseis', url: GH + 'hex#readme', repo: GH + 'hex', langs: ['csharp'], kind: 'biblioteca' },
