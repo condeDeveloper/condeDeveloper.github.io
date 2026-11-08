@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'galeria', name: 'O teorema da galeria de arte', icon: '🖼️', desc: 'Todos os poligonos simples de duas grades: a receita de Fisk nunca falhou em 89.192 deles, e pede um guarda a mais em 36,32% dos de sete cantos', url: PAGES + 'galeria/', repo: GH + 'galeria', langs: ['javascript'], kind: 'ferramenta' },
   { slug: 'reed-solomon', name: 'Reed-Solomon', icon: '📡', desc: 'Todos os padroes de erro varridos: ele corrige 23.625 de 23.625 erros duplos, e em 29,33% dos triplos devolve uma palavra errada sem avisar', url: PAGES + 'reed-solomon/', repo: GH + 'reed-solomon', langs: ['javascript'], kind: 'ferramenta' },
   { slug: 'ligue-quatro', name: 'Ligue 4 resolvido', icon: '🔴', desc: 'Dez tabuleiros resolvidos por busca completa: nove empatam, e a ordem do centro para fora corta 3,5 vezes os nos do 6x3 e piora o 4x4 em 3,2 vezes', url: PAGES + 'ligue-quatro/', repo: GH + 'ligue-quatro', langs: ['javascript'], kind: 'jogo' },
   { slug: 'pontinhos', name: 'Pontinhos', icon: '⬜', desc: 'O jogo das caixinhas resolvido em nove tabuleiros: quem fecha toda caixa que aparece perde a tira 1x5 por 0 a 5, errando em so 7,11% das posicoes', url: PAGES + 'pontinhos/', repo: GH + 'pontinhos', langs: ['javascript'], kind: 'jogo' },
