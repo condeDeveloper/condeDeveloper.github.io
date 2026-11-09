@@ -15,6 +15,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'topswops', name: 'Topswops', icon: '🃏', desc: 'As 479.001.600 permutacoes de doze cartas varridas: o maximo e 65 passos e o recordista e unico desde oito cartas, e comecar com a carta mais alta e exatamente o problema de n-1 cartas mais um passo. 37 testes', url: GH + 'topswops#readme', repo: GH + 'topswops', langs: ['node'], kind: 'biblioteca' },
   { slug: 'snarks', name: 'Snarks', icon: '🕸️', desc: 'Os 11.180.820 cubicos rotulados de dez vertices varridos: 143.640 nao se pintam com tres cores, e os 30.240 que nao se pintam sem ter ponte sao todos o Petersen', url: PAGES + 'snarks/', repo: GH + 'snarks', langs: ['javascript'], kind: 'ferramenta' },
   { slug: 'galeria', name: 'O teorema da galeria de arte', icon: '🖼️', desc: 'Todos os poligonos simples de duas grades: a receita de Fisk nunca falhou em 89.192 deles, e pede um guarda a mais em 36,32% dos de sete cantos', url: PAGES + 'galeria/', repo: GH + 'galeria', langs: ['javascript'], kind: 'ferramenta' },
   { slug: 'reed-solomon', name: 'Reed-Solomon', icon: '📡', desc: 'Todos os padroes de erro varridos: ele corrige 23.625 de 23.625 erros duplos, e em 29,33% dos triplos devolve uma palavra errada sem avisar', url: PAGES + 'reed-solomon/', repo: GH + 'reed-solomon', langs: ['javascript'], kind: 'ferramenta' },
