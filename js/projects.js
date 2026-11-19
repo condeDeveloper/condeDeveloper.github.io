@@ -8,6 +8,7 @@ const LANGS = {
   python:     { name: 'Python',                  icon: 'python',     color: '#541525', blurb: 'Ferramentas, bots e automações em Python.' },
   node:       { name: 'Node',                    icon: 'nodedotjs',  color: '#3B0F1C', blurb: 'Infraestrutura em Node puro: protocolos, ferramentas e bibliotecas sem dependência nenhuma.' },
   javascript: { name: 'JavaScript · HTML · CSS', icon: 'javascript', color: '#290A14', blurb: 'Jogos e sites em JavaScript puro, HTML semântico e CSS sem framework e sem build.' },
+  fsharp:     { name: 'F#',                      icon: 'fsharp',     color: '#1C0710', blurb: 'Jogos resolvidos por busca exata em F#, a linguagem funcional do .NET.' },
 };
 
 const GH = 'https://github.com/condeDeveloper/';
