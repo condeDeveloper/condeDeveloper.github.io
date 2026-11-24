@@ -16,6 +16,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'klotski', name: 'Klotski', icon: '🟥', desc: 'O Klotski varrido inteiro: a classica sai em 81 lances ou 116 passos, por caminhos diferentes, e com tres verticais e duas horizontais existe uma posicao que pede 138 lances. 29 testes', url: PAGES + 'klotski/', repo: GH + 'klotski', langs: ['javascript'], kind: 'jogo' },
   { slug: 'lobo-e-ovelhas', name: 'Lobo e Ovelhas', icon: '🐺', desc: 'O Lobo e as Ovelhas resolvido: no 8x8 e no 10x10 as ovelhas ganham de qualquer casa, mas com seis colunas o vencedor vira com a paridade da altura. 24 testes', url: PAGES + 'lobo-e-ovelhas/', repo: GH + 'lobo-e-ovelhas', langs: ['javascript'], kind: 'jogo' },
   { slug: 'cubos-insanos', name: 'Cubos da Insanidade', icon: '🎲', desc: 'Os quatro cubos de quatro cores varridos: com seis faces de cada cor nenhum conjunto tem solucao unica, porque as solucoes vem sempre de tres em tres. Cubos girados de verdade conferem o grafo. 23 testes', url: PAGES + 'cubos-insanos/', repo: GH + 'cubos-insanos', langs: ['javascript'], kind: 'jogo' },
   { slug: 'hitori', name: 'Hitori', icon: '⬛', desc: 'Hitori jogavel e as formas de toda solucao contadas ate 14x14: o maximo de pretas tem uma forma so no 3x3, no 5x5 e no 7x7, e no 9x9 sao 1.952. 20 testes', url: PAGES + 'hitori/', repo: GH + 'hitori', langs: ['javascript'], kind: 'jogo' },
