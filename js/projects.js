@@ -16,6 +16,7 @@ const PAGES = 'https://condedeveloper.github.io/';
 const game = (slug, name, icon, desc) => ({ slug, name, icon, desc, url: PAGES + slug + '/', repo: GH + slug, langs: ['javascript'], kind: 'jogo' });
 
 const PROJECTS = [
+  { slug: 'policubos', name: 'Policubos', icon: '🧱', desc: 'Policubos contados por Redelmeier: 446.205.905 fixos de 12 cubos, e com 11 cubos 97% das formas tem um gemeo espelhado; ate 11 cubos so tres tem as 24 rotacoes. 18 testes', url: GH + 'policubos#readme', repo: GH + 'policubos', langs: ['node'], kind: 'biblioteca' },
   { slug: 'cubo-ivy', name: 'Cubo Ivy', icon: '🍀', desc: 'O Ivy Cube varrido inteiro: 29.160 posicoes, nenhuma a mais de 8 giros, e as piores nao torcem canto nenhum. A geometria por Rodrigues concorda posicao por posicao, e Burnside da as 1.260 classes. 17 testes', url: GH + 'cubo-ivy#readme', repo: GH + 'cubo-ivy', langs: ['node'], kind: 'biblioteca' },
   { slug: 'klotski', name: 'Klotski', icon: '🟥', desc: 'O Klotski varrido inteiro: a classica sai em 81 lances ou 116 passos, por caminhos diferentes, e com tres verticais e duas horizontais existe uma posicao que pede 138 lances. 29 testes', url: PAGES + 'klotski/', repo: GH + 'klotski', langs: ['javascript'], kind: 'jogo' },
   { slug: 'lobo-e-ovelhas', name: 'Lobo e Ovelhas', icon: '🐺', desc: 'O Lobo e as Ovelhas resolvido: no 8x8 e no 10x10 as ovelhas ganham de qualquer casa, mas com seis colunas o vencedor vira com a paridade da altura. 24 testes', url: PAGES + 'lobo-e-ovelhas/', repo: GH + 'lobo-e-ovelhas', langs: ['javascript'], kind: 'jogo' },
